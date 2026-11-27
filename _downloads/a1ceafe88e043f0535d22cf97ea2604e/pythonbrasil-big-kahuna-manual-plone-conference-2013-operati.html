@@ -1,0 +1,1064 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+  <head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=3grhEDQT" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://manual.pythonbrasil.org.br/introducao/historia/pythonbrasil9.html","20250601112938","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1748777378");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/"/>
+<link rel="index" title="Índice" href="../../genindex.html"/><link rel="search" title="Pesquisar" href="/web/20250601112938/https://manual.pythonbrasil.org.br/search.html"/><link rel="next" title="Python Brasil 2014" href="pythonbrasil10.html"/><link rel="prev" title="Python Brasil 2012" href="pythonbrasil8.html"/>
+
+    <meta name="generator" content="sphinx-4.4.0, furo 2022.03.04"/>
+        <title>Python Brasil 2013 - Manual do Big Kahuna</title>
+      <link rel="stylesheet" type="text/css" href="/web/20250601112938cs_/https://manual.pythonbrasil.org.br/_static/pygments.css"/>
+    <link rel="stylesheet" type="text/css" href="/web/20250601112938cs_/https://manual.pythonbrasil.org.br/_static/styles/furo.css?digest=935aa2abcc5c1da4283d1dc201fb1f0add16d23a"/>
+    <link rel="stylesheet" type="text/css" href="/web/20250601112938cs_/https://manual.pythonbrasil.org.br/_static/styles/furo-extensions.css?digest=25ceb02ed1c46dc30f2321ff83e92799f69dfdb9"/>
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style><script async type="text/javascript" src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="pythonbrasil-documentacao"/><meta name="readthedocs-version-slug" content="latest"/><meta name="readthedocs-resolver-filename" content="/introducao/historia/pythonbrasil9.html"/><meta name="readthedocs-http-status" content="200"/></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewbox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewbox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewbox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewbox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewbox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewbox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M13 12h5"/>
+      <path d="M13 15h4"/>
+      <path d="M13 18h1"/>
+      <path d="M13 9h4"/>
+      <path d="M13 6h1"/>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="/web/20250601112938/https://manual.pythonbrasil.org.br/index.html"><div class="brand">Manual do Big Kahuna</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="/web/20250601112938/https://manual.pythonbrasil.org.br/index.html">
+  
+  
+  <span class="sidebar-brand-text">Manual do Big Kahuna</span>
+  
+</a><form class="sidebar-search-container" method="get" action="/web/20250601112938/https://manual.pythonbrasil.org.br/search.html" role="search">
+  <input class="sidebar-search" placeholder="Pesquisar" name="q" aria-label="Pesquisar">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/introducao/introducao.html">Introdução</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pyconbrasil.html">PyConBrasil / PyConDay 2005</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyconbrasil2.html">PyConBrasil 2006</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyconbrasil3.html">PyConBrasil 2007</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyconbrasil2008.html">PyConBrasil 2008</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil5.html">Python Brasil 2009</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil6.html">Python Brasil 2010</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil7.html">Python Brasil 2011</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil8.html">Python Brasil 2012</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Python Brasil 2013</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil10.html">Python Brasil 2014</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil11.html">Python Brasil 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil12.html">Python Brasil 2016</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil13.html">Python Brasil 2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil14.html">Python Brasil 2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil15.html">Python Brasil 2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil16.html">Python Brasil 2020</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil17.html">Python Brasil 2021</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil18.html">Python Brasil 2022</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonbrasil19.html">Python Brasil 2023</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/proposta/index.html">Proposta de Candidatura</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/proposta/introducao.html">O processo de escolha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/proposta/introducao.html#elaboracao-da-proposta">Elaboração da proposta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/proposta/introducao.html#exemplos-e-modelos">Exemplos e modelos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/proposta/modelo.html">Modelo de proposta</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/organizacao/index.html">Organizando uma Python Brasil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="/web/20250601112938/https://manual.pythonbrasil.org.br/organizacao/index.html#tretas-comuns">Tretas comuns</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container"><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="python-brasil-2013">
+<span id="index-0"></span><h1>Python Brasil 2013<a class="headerlink" href="#python-brasil-2013" title="Link permanente para este título">#</a></h1>
+<section id="informacoes-gerais">
+<h2>Informações Gerais<a class="headerlink" href="#informacoes-gerais" title="Link permanente para este título">#</a></h2>
+<p>Nome oficial do evento: PythonBrasil[9] / Plone Conference 2013</p>
+<p>Organizadora: Tânia Andrea</p>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 20%"/>
+<col style="width: 57%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>O que?</p></th>
+<th class="head"><p>Quando?</p></th>
+<th class="head"><p>Onde?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Treinamentos</strong></p></td>
+<td><p>30/9 e 1/10/2013</p></td>
+<td><p>Escola de Administração Fazendária (ESAF) - Brasília/DF</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Conferências</strong></p></td>
+<td><p>2 a 4/10/2013</p></td>
+<td><p>Centro de Convenções Ulysses Guimarães (CCUG) - Brasília/DF</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Festa</strong></p></td>
+<td><p>3/10/2013</p></td>
+<td><p>Clube Naval - Brasília/DF</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Job Fair</strong></p></td>
+<td><p>4/10/2013</p></td>
+<td><p>Centro de Convenções Ulysses Guimarães (CCUG) - Brasília/DF</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Sprint da Conferência</strong></p></td>
+<td><p>5 e 6/10/2013</p></td>
+<td><p>Nova Central Sindical de Trabalhadores (NCST) - Brasília/DF</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Caipirinha Sprint</strong></p></td>
+<td><p>8 a 11/10/2013</p></td>
+<td><p>Hotel Xenius - João Pessoa/PB</p></td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="numeros">
+<h2>Números<a class="headerlink" href="#numeros" title="Link permanente para este título">#</a></h2>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 58%"/>
+<col style="width: 42%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Inscritos no evento</p></td>
+<td><ul class="simple">
+<li><p>584</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Palestras</p></td>
+<td><ul class="simple">
+<li><p>+144</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Palestrantes internacionais</p></td>
+<td><ul class="simple">
+<li><p>+30</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Keynotes</p></td>
+<td><ul class="simple">
+<li><p>7</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Treinamentos</p></td>
+<td><ul class="simple">
+<li><p>16</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Estados representados (Brasil)</p></td>
+<td><ul class="simple">
+<li><p>21</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Países representados</p></td>
+<td><ul class="simple">
+<li><p>19</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Continentes representados</p></td>
+<td><ul class="simple">
+<li><p>Todos</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Mulheres no evento</p></td>
+<td><ul class="simple">
+<li><p>~10%</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Inscritos no treinamento</p></td>
+<td><ul class="simple">
+<li><p>~150</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Patrocinadores</p></td>
+<td><ul class="simple">
+<li><p>15</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Apoiadores</p></td>
+<td><ul class="simple">
+<li><p>18</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="resumo">
+<h2>Resumo<a class="headerlink" href="#resumo" title="Link permanente para este título">#</a></h2>
+<p>A Big Kahuna da PythonBrasil[9] / Plone Conference 2013 foi Tânia Andrea
+que organizou o evento voluntariamente com a ajuda dos membros da comunidade PloneGov-BR
+e apoio de outros membros da comunidade Python, sem qualquer fim lucrativo.</p>
+<p><strong>Keynotes Speakers:</strong></p>
+<p>Contamos com 7 Keynotes Speakers convidados para o evento:</p>
+<ul class="simple">
+<li><p>Eric Steele (Plone 5)</p></li>
+<li><p>Fábio Costa (linguagem convidada, JavaScript)</p></li>
+<li><p>Karin Breitman (Big Data)</p></li>
+<li><p>Paul Everitt (Pyramid)</p></li>
+<li><p>Paul Hildebrandt (Walt Disney)</p></li>
+<li><p>Paul Roeland (State of Plone)</p></li>
+<li><p>Rodrigo Senra (Show Pyrotécnico)</p></li>
+</ul>
+<p><strong>Tivemos:</strong></p>
+<ul class="simple">
+<li><p>Open Spaces</p></li>
+<li><p>Keynotes Speakers</p></li>
+<li><p>Palestra da linguagem convidada (JavaScript)</p></li>
+<li><p>Palestras Relâmpago</p></li>
+<li><p>Dojo</p></li>
+<li><p>Job Fair (novidade)</p></li>
+<li><p>Prêmios (Prêmio Dorneles Treméa e Plone Awards)</p></li>
+<li><p>Foto Oficial (<a class="reference external" href="https://web.archive.org/web/20250601112938/http://www.flickr.com/photos/pythonbrasil/">http://www.flickr.com/photos/pythonbrasil/</a>)</p></li>
+<li><p>Filmagem (todas no YouTube da Python Brasil: <a class="reference external" href="https://web.archive.org/web/20250601112938/https://www.youtube.com/user/pythonbrazil">https://www.youtube.com/user/pythonbrazil</a>)</p></li>
+<li><p>Tradução Simultânea</p></li>
+<li><p>Agência Oficial (Bancorbrás)</p></li>
+<li><p>A Festa (novidade)</p></li>
+<li><p>Sprint da Conferência</p></li>
+<li><p>Sprint Pós-Conferência na Praia (novidade)</p></li>
+<li><p>Lounge e Hall de exposição (6 m2)</p></li>
+<li><p>Código de Conduta (novidade)</p></li>
+<li><p>Kit do participante com camiseta, ecobag, caneta, cordão da Mozilla, crédito de $ 35 USD no Amazon AWS, dentre outros</p></li>
+</ul>
+<p>Rodada de Negócios foi cancelado por não ter a participação do Sebrae.</p>
+<p><strong>Alimentação:</strong></p>
+<p>Por não ter locais próximos ao CCUG para almoço e para viabilizar a logística
+de palestras próximas deste horário, oferecemos almoço gratuitamente
+aos participantes e funcionários.</p>
+<p>Na área do Open Space havia uma copeira para preparação do café expresso.
+Foram servidos mais de 600 copos de café! o/</p>
+<p>No hall de exposição, que fica na entrada do auditório Master do CCUG,
+houve venda de sushi e outros produtos de lanchonete.</p>
+<p><strong>Hall de exposição:</strong></p>
+<p>Além da lanchonete e loja de sushi, tivemos no hall de exposição os stands dos patrocinadores,
+suporte da agência de turismo (Bancorbrás),
+venda de livros Novatec, souvenirs de Brasília e outros produtos artesanais.</p>
+<p><strong>Código de conduta:</strong></p>
+<p>Pela primeira vez instituímos o código de conduta como termo de conhecimento obrigatório
+dos participantes, palestrantes e expositores da Python Brasil. Essa foi uma exigência
+da PSF para conceder o patrocínio e tem prática semelhante sendo adotada
+por expositores do FISL, Plone Foundation e pela organização da PyCon US.</p>
+<p><strong>Prêmios:</strong></p>
+<p>Neste ano o Prêmio Dorneles Treméa foi para…</p>
+<ul class="simple">
+<li><p><strong>Fernando Masanori</strong> - Docente da FATEC São José dos Campos, adora dar aulas, graduado em
+Computação pelo IME-USP, mestrado pelo ITA. Desenvolveu projetos para a Cobra Tecnologia,
+Credicard Mastercard, PriceWaterhouse&amp;Coopers e Itaú Bankboston. Interesses: Python,
+Data Warehouse, NoSQL, Pentaho, Google Technology, Facebook. Voluntário em projetos sociais
+voltados para a educação infantil nos finais de semana.</p></li>
+<li><p><strong>Henrique Bastos</strong> - Apaixonado por desenvolvimento de software!
+Trabalha aplicando tecnologias livres como Python, Django e Métodos Ágeis promovendo economia para seus clientes
+e parceiros. É membro da Associação Python Brasil e da Python Software Foundation, além de
+atuar constantemente nas comunidades de software organizando eventos e encontros,
+ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software,
+no Brasil e no exterior.</p></li>
+</ul>
+<p>E o Plone Awards foi para…</p>
+<ul class="simple">
+<li><p><strong>Asko Soukka</strong> - Que não pode comparecer ao evento, mas recebeu $ 1,500 USD como prêmio
+pelas importantes contribuições ao Plone.</p></li>
+</ul>
+<p><strong>Redes Sociais utilizadas:</strong></p>
+<dl class="simple">
+<dt>Twitter:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://web.archive.org/web/20250601112938/https://twitter.com/pythonbrasil">https://twitter.com/pythonbrasil</a></p></li>
+<li><p><a class="reference external" href="https://web.archive.org/web/20250601112938/https://twitter.com/ploneconf">https://twitter.com/ploneconf</a></p></li>
+</ul>
+</dd>
+<dt>Facebook:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://web.archive.org/web/20250601112938/https://www.facebook.com/pythonbrasil">https://www.facebook.com/pythonbrasil</a></p></li>
+<li><p><a class="reference external" href="https://web.archive.org/web/20250601112938/https://www.facebook.com/PloneConf">https://www.facebook.com/PloneConf</a></p></li>
+</ul>
+</dd>
+<dt>Google+:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://web.archive.org/web/20250601112938/https://plus.google.com/u/0/109784293046561922302/posts">https://plus.google.com/u/0/109784293046561922302/posts</a></p></li>
+<li><p><a class="reference external" href="https://web.archive.org/web/20250601112938/https://plus.google.com/u/0/110598996082644033939/posts">https://plus.google.com/u/0/110598996082644033939/posts</a></p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="plone-conference-2013">
+<h2>Plone Conference 2013<a class="headerlink" href="#plone-conference-2013" title="Link permanente para este título">#</a></h2>
+<p>Em conjunto com a PythonBrasil[9] foi realizada a décima primeira edição da Plone
+Conference, pela primeira vez na América Latina.</p>
+<p>As edições anteriores foram em Arnhem (2012), São Francisco (2011), Bristol (2010),
+Budapeste (2009), Washington DC (2008), Nápoles (2007), Seattle (2006), Viena (2005),
+Viena (2004) e Nova Orleans (2003).</p>
+<p>Inicialmente a comunidade PloneGov-BR fez uma proposta para sediar somente a PloneConf no Brasil,
+depois a organização decidiu pela união dos eventos objetivando a redução de custos.
+Por serem duas conferências internacionais e sem fins lucrativos, conseguimos o apoio do GDF.</p>
+</section>
+<section id="inscricoes">
+<h2>Inscrições<a class="headerlink" href="#inscricoes" title="Link permanente para este título">#</a></h2>
+<p>Inicialmente a inscrição seria gratuita, porque o Secretário de Turismo do Distrito Federal
+ofereceria desconto de 100% no aluguel de algumas salas e auditório master do CCUG.
+Como não foi possível manter esse acordo, abrimos as inscrições com o valor simbólico de R$ 50
+(R$ 25 para estudantes ou membros da APyB), depois aumentamos a cada slot (como é feito tradicionalmente).</p>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%"/>
+<col style="width: 26%"/>
+<col style="width: 59%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Valor</p></th>
+<th class="head"><p>Data da Inscrição</p></th>
+<th class="head"><p>Observação</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R$ 50</p></td>
+<td><p>até 9/8/2013</p></td>
+<td><p>R$ 25 para estudantes ou associados da APyB</p></td>
+</tr>
+<tr class="row-odd"><td><p>R$ 100</p></td>
+<td><p>de 10/8 a 24/9/2013</p></td>
+<td><p>R$ 50 para estudantes ou associados da APyB</p></td>
+</tr>
+<tr class="row-even"><td><p>R$ 150</p></td>
+<td><p>de 25/9 a 1/10/2013</p></td>
+<td><p>R$ 75 para estudantes ou associados da APyB</p></td>
+</tr>
+<tr class="row-odd"><td><p>R$ 200</p></td>
+<td><p>no dia do evento</p></td>
+<td><p>R$ 100 para estudantes ou associados da APyB</p></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Observação:</strong> organizações de governo pagam R$ 400 porque o empenho só é efetuado no final do evento
+e tem impostos envolvidos, além de custos adicionais pela emissão de Nota Fiscal
+e trabalho com comprovações para os participantes do governo.</p>
+</section>
+<section id="patrocinadores">
+<h2>Patrocinadores<a class="headerlink" href="#patrocinadores" title="Link permanente para este título">#</a></h2>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 60%"/>
+<col style="width: 40%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Serpro</p></td>
+<td><ul class="simple">
+<li><p>Diamante</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>NIC.br / CGI.br</p></td>
+<td><ul class="simple">
+<li><p>Diamante</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Liberiun</p></td>
+<td><ul class="simple">
+<li><p>Platina</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Simples Consultoria</p></td>
+<td><ul class="simple">
+<li><p>Platina</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Globo.com</p></td>
+<td><ul class="simple">
+<li><p>Ouro</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Four Digits</p></td>
+<td><ul class="simple">
+<li><p>Ouro</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Titans Group</p></td>
+<td><ul class="simple">
+<li><p>Ouro</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Python Software Foundation (PSF)</p></td>
+<td><ul class="simple">
+<li><p>Ouro</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Interlegis</p></td>
+<td><ul class="simple">
+<li><p>Ouro</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Evolux</p></td>
+<td><ul class="simple">
+<li><p>Bronze</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Amazon</p></td>
+<td><ul class="simple">
+<li><p>Bronze</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>CMS COM – do Japão o/</p></td>
+<td><ul class="simple">
+<li><p>Bronze</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PyCursos</p></td>
+<td><ul class="simple">
+<li><p>Bronze</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>ZNC Sistemas</p></td>
+<td><ul class="simple">
+<li><p>Bronze</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Agência Click Isobar</p></td>
+<td><ul class="simple">
+<li><p>Bronze</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="apoiadores">
+<h2>Apoiadores<a class="headerlink" href="#apoiadores" title="Link permanente para este título">#</a></h2>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 46%"/>
+<col style="width: 54%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>GDF</p></td>
+<td><ul class="simple">
+<li><p>Desconto no espaço das conferências</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Câmara dos Deputados</p></td>
+<td><ul class="simple">
+<li><p>Apoio com organização</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ESAF</p></td>
+<td><ul class="simple">
+<li><p>Espaço dos treinamentos</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Novatec</p></td>
+<td><ul class="simple">
+<li><p>Doação de livros</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PyTown</p></td>
+<td><ul class="simple">
+<li><p>Hospegam do site</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>ASL.org</p></td>
+<td><ul class="simple">
+<li><p>Apoio de Mídia</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Disney Animation Studios</p></td>
+<td><ul class="simple">
+<li><p>Keynote internacional</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>DZA eventos</p></td>
+<td><ul class="simple">
+<li><p>Auxílio com organização</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Assessoria Internacional / GDF</p></td>
+<td><ul class="simple">
+<li><p>Tradutores</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Mozilla</p></td>
+<td><ul class="simple">
+<li><p>Cordões e outros brindes</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>LightBase</p></td>
+<td><ul class="simple">
+<li><p>Camisetas</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>PloneGov-BR</p></td>
+<td><ul class="simple">
+<li><p>Organização</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Associação PythonBrasil (APyB)</p></td>
+<td><ul class="simple">
+<li><p>Temário</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Plone Foundation</p></td>
+<td><ul class="simple">
+<li><p>USD 2,500 para stand no FISL</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Bancorbrás</p></td>
+<td><ul class="simple">
+<li><p>Apoio Turístico</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Revista Espírito Livre</p></td>
+<td><ul class="simple">
+<li><p>Apoio de Mídia</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Linux New Media</p></td>
+<td><ul class="simple">
+<li><p>Apoio de Mídia</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>Dicas-L</p></td>
+<td><ul class="simple">
+<li><p>Apoio de Mídia</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>DigNow</p></td>
+<td><ul class="simple">
+<li><p>Apoio de Mídia</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section id="receitas-e-despesas">
+<h2>Receitas e Despesas<a class="headerlink" href="#receitas-e-despesas" title="Link permanente para este título">#</a></h2>
+<p>Para a edição de 2013 não havia caixa na APyB. Contamos com o empréstimo de amigos
+para as primeiras divulgações e outras ações emergenciais, até conseguir os primeiros
+patrocínios.</p>
+<p>A gestão das receitas e despesas foram feitas pela Big Kahuna Tânia Andrea
+com um fluxo de caixa (planilha) e frequentemente consultando o Banco do Brasil,
+o PayPal e o PagSeguro pelos extratos fornecidos pela APyB. Em resumo:</p>
+<ul class="simple">
+<li><p>Total de Receitas = R$ 215.460</p></li>
+<li><p>Total de Despesas = R$ 185.674</p></li>
+<li><p>Total de Taxas = R$ 5.073</p></li>
+</ul>
+<p>Logo, tivemos lucro de: R$ 24.712 ou USD 10,427.</p>
+<p>Sendo que $ 5,000 USD foram para a Plone Foundation e
+$ 5,427 USD ficaram com a Associação Python Brasil.</p>
+<p><strong>Detalhamento:</strong></p>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 63%"/>
+<col style="width: 37%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Receitas</p></th>
+<th class="head"><p>R$ 215.460</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Doações</p></td>
+<td><p>R$ 6.470</p></td>
+</tr>
+<tr class="row-odd"><td><p>Empenhos</p></td>
+<td><p>R$ 20.113</p></td>
+</tr>
+<tr class="row-even"><td><p>Inscrições – Conferência</p></td>
+<td><p>R$ 19.730</p></td>
+</tr>
+<tr class="row-odd"><td><p>Inscrições – Treinamento</p></td>
+<td><p>R$ 4.600</p></td>
+</tr>
+<tr class="row-even"><td><p>Patrocínios</p></td>
+<td><p>R$ 164.546</p></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 63%"/>
+<col style="width: 37%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Despesas</p></th>
+<th class="head"><p>R$ 185.674</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Alimentação</p></td>
+<td><p>R$ 8.823</p></td>
+</tr>
+<tr class="row-odd"><td><p>Filmagem</p></td>
+<td><p>R$ 14.997</p></td>
+</tr>
+<tr class="row-even"><td><p>Foto</p></td>
+<td><p>R$ 1.800</p></td>
+</tr>
+<tr class="row-odd"><td><p>Geradores</p></td>
+<td><p>R$ 10.008</p></td>
+</tr>
+<tr class="row-even"><td><p>Gráfica/Estrutura</p></td>
+<td><p>R$ 19.691</p></td>
+</tr>
+<tr class="row-odd"><td><p>Homenagens</p></td>
+<td><p>R$ 1.238</p></td>
+</tr>
+<tr class="row-even"><td><p>Hospedagens</p></td>
+<td><p>R$ 7.420</p></td>
+</tr>
+<tr class="row-odd"><td><p>Infraestrutura – Conferência</p></td>
+<td><p>R$ 55.130</p></td>
+</tr>
+<tr class="row-even"><td><p>Infraestrutura – Treinamento</p></td>
+<td><p>R$ 164</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kit dos Participantes</p></td>
+<td><p>R$ 10.702</p></td>
+</tr>
+<tr class="row-even"><td><p>Link Internet</p></td>
+<td><p>R$ 19.785</p></td>
+</tr>
+<tr class="row-odd"><td><p>Local – Conferência</p></td>
+<td><p>R$ 16.140</p></td>
+</tr>
+<tr class="row-even"><td><p>Local – Festa</p></td>
+<td><p>R$ 1.498</p></td>
+</tr>
+<tr class="row-odd"><td><p>Marketing</p></td>
+<td><p>R$ 850</p></td>
+</tr>
+<tr class="row-even"><td><p>Seguro para Participantes</p></td>
+<td><p>R$ 474</p></td>
+</tr>
+<tr class="row-odd"><td><p>Limpeza</p></td>
+<td><p>R$ 6.048</p></td>
+</tr>
+<tr class="row-even"><td><p>Segurança</p></td>
+<td><p>R$ 849</p></td>
+</tr>
+<tr class="row-odd"><td><p>Passagens</p></td>
+<td><p>R$ 3.775</p></td>
+</tr>
+<tr class="row-even"><td><p>Outros Serviços (M.O.)</p></td>
+<td><p>R$ 6.282</p></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 63%"/>
+<col style="width: 37%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Taxas</strong></p></td>
+<td><p><strong>R$ 5.073</strong></p></td>
+</tr>
+</tbody>
+</table></div>
+<p>Palestrantes convidados e outros tantos foram hospedados sem custo
+no hotel ou nos quartos da ESAF.</p>
+<p>O almoço, café e água nos três dias de conferência foram pagos pela organização.</p>
+<p>A Festa teve receita e despesa à parte paga com a compra de ingresso individual.
+Apenas a reserva do local da festa (R$ 1.500) foi feito com o dinheiro da organização.</p>
+</section>
+<section id="fotos">
+<h2>Fotos<a class="headerlink" href="#fotos" title="Link permanente para este título">#</a></h2>
+<p>Todas fotos podem ser vistas no Flickr
+da Python Brasil: <a class="reference external" href="https://web.archive.org/web/20250601112938/http://www.flickr.com/photos/pythonbrasil/">http://www.flickr.com/photos/pythonbrasil/</a></p>
+<p><strong>Foto Oficial:</strong>
+.. image:: ../../imagens/pybr9_fotooficial.jpg</p>
+<p><strong>Organizadores:</strong>
+.. image:: ../../imagens/pybr9_organizadores.jpg</p>
+<p><strong>Painel dos Patrocinadores na abertura:</strong>
+.. image:: ../../imagens/pybr9_patrocinadores.jpg</p>
+<p><strong>Kit dos Participantes:</strong>
+.. image:: ../../imagens/pybr9_kitparticipantes.jpg</p>
+</section>
+<section id="agradecimentos-especiais">
+<h2>Agradecimentos Especiais<a class="headerlink" href="#agradecimentos-especiais" title="Link permanente para este título">#</a></h2>
+<ul class="simple">
+<li><p>Excelentíssimo Senhor Alexandre Motta (Subsecretário de Planejamento, Orçamento e
+Administração do Ministério da Fazenda) por disponibilizar o local dos treinamentos na ESAF.</p></li>
+<li><p>Embaixatriz Ana Amorim (Serpro) sem ela muitas portas não seriam abertas.</p></li>
+<li><p>Excelentíssimo Embaixador Benedicto Fonseca (Ministério das Relações Exteriores)
+por dar suporte a vinda dos palestrantes e participantes internacionais ao evento.</p></li>
+<li><p>Excelentíssimo Senhor Luís Otávio (Secretário de Turismo do Distrito Federal)
+pelo necessário suporte em fornecer o local do evento no coração de Brasília.</p></li>
+<li><p>Excelentíssimo Senhor Marcos Mazoni (presidente do Serpro) pelo apoio dado
+aos eventos software livre e pelo patrocínio.</p></li>
+<li><p>Excelentíssimo Senhor Odilon Frazão (Chefe da Assessoria Internacional do
+Distrito Federal) pelo apoio com a tradução simultânea do evento.</p></li>
+<li><p>Fábio Surrage (Câmara dos Deputados) pelas manutenções no sistema de inscrições das conferências.</p></li>
+<li><p>Fernanda Guedes Diogo pelo projeto de layout do local do evento no Centro de Convenções Ulysses Guimarães.</p></li>
+<li><p>João Gouveia e Jean Ferri (Interlegis) por todos os voluntários que ajudaram no
+credenciamento e outros itens emergentes da conferência.</p></li>
+<li><p>Hector Velarde, Cléber Santos e Thiago Tamošauskas (Simples Consultoria) pela disponibilização
+do site Plone Awards com seu sistema de votação.</p></li>
+<li><p>Liberiun pelo design da proposta, dos folders e de todos materiais impressos.</p></li>
+<li><p>Márcio Mazza e Érico Andrei pela implantação e manutenções no sistema de inscrições.</p></li>
+<li><p>Rudá Moura (APyB) pela primeira hospedagem e manutenção da infraestrutura do site do evento.</p></li>
+<li><p>André Nogueira (Simples Consultoria) pelo design do site.</p></li>
+<li><p>Amigos Giuseppe Romagnoli e Rafahela Bazzanella por dividir sem medir esforços os árduos desafios diários.</p></li>
+</ul>
+</section>
+<section id="feedback-dos-participantes">
+<h2>Feedback dos Participantes<a class="headerlink" href="#feedback-dos-participantes" title="Link permanente para este título">#</a></h2>
+<p>«PythonBrasil! It was awesome, now I am just messing around here.»
+(Paul Hildebrandt, no Twitter @paulhildebrandt) em 6 de outubro de 2013</p>
+<p>«Obrigado por ter ajudado a proporcionar esse evento excelente!»
+(Fábio Miranda Costa, por e-mail) em 7 de outubro de 2013</p>
+<p>«A PythonBrasil [9] foi sensacional. Muito grato a todos que fizeram acontecer: público, palestrantes e organizadores.»
+(Luciano Ramalho, no Facebook) em 11 de outubro de 2013</p>
+<p>«#ploneconf #pythonbrasil sprint 2013-10-05: excellent location, thank you organizers and #ncst pic.twitter.com/VbL021sZ7O»
+(Luciano Ramalho, no Twitter @ramalhoorg) em 6 de outubro de 2013</p>
+<p>«Plone Conferences are great. Those who missed 2013 don’t need to be reminded of that. But you might like to hear more about the post-conference sprint, which felt different than any I remember.»
+(Steve MacMahon) em 13 de outubro de 2013. Fonte: <a class="reference external" href="https://web.archive.org/web/20250601112938/http://www.stevemcmahon.com/steves-blog/ploneconf-2013-the-sprint">http://www.stevemcmahon.com/steves-blog/ploneconf-2013-the-sprint</a></p>
+<p>“Training and talks, meeting old friends, Plone getting a new burst of momentum.”
+(Paul Everitt) em 8 de outubro de 2013. Fonte: <a class="reference external" href="https://web.archive.org/web/20250601112938/https://agendaless.com/blog/plpycon-brasilia/">https://agendaless.com/blog/plpycon-brasilia/</a></p>
+<p>«Open Source — It works […] I’m going to write a longer post about the fantastic Plone Conference 2013»
+(Matt Hamilton) em 10 de outubro de 2013
+Fonte: <a class="reference external" href="https://web.archive.org/web/20250601112938/http://www.netsight.co.uk/blog/open-source-2014-it-works?utm_source=twitterfeed&amp;utm_medium=twitter">http://www.netsight.co.uk/blog/open-source-2014-it-works?utm_source=twitterfeed&amp;utm_medium=twitter</a></p>
+<p>«Parabéns pela organização do evento!»
+(Mário Sérgio Oliveira de Queiroz, por e-mail) em 7 de outubro de 2013</p>
+<p>«On my way to Brazil. Because I’m a programmer. Of free software.»
+(Eric Steele, no Twitter @esteele) em 29 de setembro de 2013</p>
+<p>«Parabéns pela organização do PythonBrasil9/PloneConf 2013!!! O evento estava muito bom! Fluiu tudo muito bem!»
+(Elizabeth de C. Wanderley Ramos, do Tribunal Superior Eleitoral, por e-mail) em 9 de outubro de 2013</p>
+<p>«Muito obrigado. A conferência foi ótima!!!»
+(Igor Tadeu S. V. Stemler, do Departamento de Pesquisas Judiciárias - CNJ, por e-mail) em 9 de outubro de 2013</p>
+<p>«Parabéns por organizar a #pythonbrasil em conjunto com a Ploneconf, foi tudo muito legal! […] Foi um casamento bonito, foi um evento pra lembrar em outras oportunidades.»
+(Rudá Moura, no Twitter @__ruda__) em 9 de outubro de 2013</p>
+<p>«A @pythonbrasil foi sensacional. Parabéns. #pythonbrasil»
+(Denis Costa, no Twitter @deniscostadsc) em 5 de outubro de 2013</p>
+<p>«Me dei de presente de aniversário a oportunidade de participar da @PythonBrasil! o/ #python #pythonbrasil»
+(Fernando Macedo, no Twitter @fgmacedo) em 2 de outubro de 2013</p>
+<p>«O evento foi show!!! pic.twitter.com/Wbw8rGCr8Z»
+(Bruno Barbosa, no Twitter @brunobbbs) em 4 de outubro de 2013</p>
+<p>«O melhor da @pythonbrasil são as pessoas. Se não fosse essa comunidade fenomenal eu não teria entrado no ecossistema.»
+(Vinicius Assef, no Twitter @viniciusban) em 2 de outubro de 2013</p>
+<p>«Uma das coisas mais legais dessa @pythonbrasil é a diversidade de comunidade. Minas Gerias, Pernambuco, Piaui, Rio de Janeiro, São Paulo, etc»
+(Cassio Botaro, no Twitter @cassiobotaro) em 3 de outubro de 2013</p>
+<p>«Rodrigo Senra recordando toda a história da @pythonbrasil, no Show Pyrotécnico.»
+(Renato Lipi, no Twitter @renatolipi) em 4 de outubro de 2013</p>
+<p>«So long and thanks for all the meat. #ploneconf #pythonbrasil . See you again in Bristol and Recife pic.twitter.com/HT9gYBwahF»
+(Érico Andrei, no Twitter @ericof) em 5 de outubro de 2013</p>
+<p>«Back in .nl after a great #ploneconf. Such a nice community! See you all next year, in Sorrento and Bristol and who knows where…»
+(Guido Stevens, no Twitter &lt;200f&gt;@GuidoStevens) em 7 de outubro de 2013</p>
+<p>«#ploneconf is over == sad. Caipirinha-sprint about to start == consoling. Thanks for a great conference!»
+(Philip Bauer, no Twitter @StarzelDe) em 6 de outubro de 2013</p>
+<p>«@ploneconf sprint was awsome, hope to more of those.»
+(Winston, no Twitter &lt;200f&gt;@winstonf88) em 6 de outubro de 2013</p>
+<p>«Brazil Plone &amp; Python community, Obrigado! #ploneconf was excelente!»
+(Steve McMahon, no Twitter @shmcmahon) em 6 de outubro de 2013</p>
+<p>«@ploneconf thanks for all your hard work hosting us! It was a fantastic conference.»
+(David Glick, no Twitter @davisagli) em 6 de outubro de 2013</p>
+<p>«The sad sign that this is the last day of the #ploneconf sprint. pic.twitter.com/bVjcKdJc5G»
+(Steve McMahon &lt;200f&gt;@shmcmahon) em 6 de outubro de 2013</p>
+<p>«It’s the end of @PloneConf 2013 and @PythonBrasil 9, was amazing time! See you… pic.twitter.com/1WcJeqzTUF»
+(Jean Ferri, no Twitter &lt;200f&gt;@JeanFerri) em 4 de outubro de 2013</p>
+<p>«Números o cifras resultantes del @pythonbrasil y del @ploneconf 2013 #pythonbrasil #ploneconf pic.twitter.com/vbEbzAu0Rv»
+(Plone Venezuela, no Twitter &lt;200f&gt;@PloneVe) em 4 de outubro de 2013</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="pythonbrasil10.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Python Brasil 2014</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="pythonbrasil8.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Python Brasil 2012</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2011, Associação Python Brasil
+            </div>
+            Made with <a href="https://web.archive.org/web/20250601112938/https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://web.archive.org/web/20250601112938/https://pradyunsg.me/">@pradyunsg</a>'s
+            
+            <a href="https://web.archive.org/web/20250601112938/https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Conteúdo
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Python Brasil 2013</a><ul>
+<li><a class="reference internal" href="#informacoes-gerais">Informações Gerais</a></li>
+<li><a class="reference internal" href="#numeros">Números</a></li>
+<li><a class="reference internal" href="#resumo">Resumo</a></li>
+<li><a class="reference internal" href="#plone-conference-2013">Plone Conference 2013</a></li>
+<li><a class="reference internal" href="#inscricoes">Inscrições</a></li>
+<li><a class="reference internal" href="#patrocinadores">Patrocinadores</a></li>
+<li><a class="reference internal" href="#apoiadores">Apoiadores</a></li>
+<li><a class="reference internal" href="#receitas-e-despesas">Receitas e Despesas</a></li>
+<li><a class="reference internal" href="#fotos">Fotos</a></li>
+<li><a class="reference internal" href="#agradecimentos-especiais">Agradecimentos Especiais</a></li>
+<li><a class="reference internal" href="#feedback-dos-participantes">Feedback dos Participantes</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_static/documentation_options.js"></script>
+    <script src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_static/jquery.js"></script>
+    <script src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_static/underscore.js"></script>
+    <script src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_static/doctools.js"></script>
+    <script src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_static/scripts/furo.js"></script>
+    <script src="/web/20250601112938js_/https://manual.pythonbrasil.org.br/_static/translations.js"></script>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 11:29:38 Jun 01, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:55:28 Nov 02, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.403
+  exclusion.robots: 0.039
+  exclusion.robots.policy: 0.029
+  esindex: 0.006
+  cdx.remote: 11.116
+  LoadShardBlock: 81.386 (3)
+  PetaboxLoader3.resolve: 335.316 (3)
+  PetaboxLoader3.datanode: 90.298 (4)
+  load_resource: 400.516
+-->

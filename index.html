@@ -1,0 +1,895 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="A public, community-maintained manual for organizing Plone conferences." name="description" />
+<meta content="A public, community-maintained manual for organizing Plone conferences." property="og:description" />
+<meta content="Plone Conference Organizers Handbook" property="og:title" />
+<meta content="Plone, conference, organizers, organisers, handbook" name="keywords" />
+<meta property="og:title" content="Plone Conference Organizers Handbook" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="Plone Conference Organizers Handbook" />
+<meta property="og:description" content="This handbook is a public, community-maintained manual for organizing Plone conferences. It collects what previous organizers learned, so that the next team doesn&#x27;t start from nothing. Both sp..." />
+<meta property="og:locale" content="en_US" />
+
+    <title>Plone Conference Organizers Handbook &#8212; Plone Conference Organizers Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=0fc419ee" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/plone-sphinx-theme.css?v=03afa5dd" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="_static/hb.css?v=932d0239" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="_static/documentation_options.js?v=b9472d72"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/plone-sphinx-theme.js?v=ce3a8c55"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="About and purpose" href="start/about.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt=""/>
+    <img src="_static/logo.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Plone Conference Organizers Handbook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="start/about.html">About and purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/choose-your-path.html">Choose your path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/context-dimensions.html">Context dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/honesty-statement.html">Honesty statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/how-to-read-lessons.html">How to read lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/license-and-contribute.html">License and contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/problem-history.html">The problem history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/tailor.html">Tailor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/use.html">Use: your first 90 days</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The organizer's job</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="job/bid-and-selection.html">Bid and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/community-and-speaker-expectations.html">Community and speaker expectations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/defining-success.html">Defining success</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/handover-contract.html">Handover contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/legal-entity-and-financial-agent.html">Legal entity and financial agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/master-timeline.html">Master timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/stakeholder-map.html">Stakeholder map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/team-and-governance.html">Team and governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workstreams</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="workstreams/index.html">Workstreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/formats-and-values/hybrid-online.html">Hybrid and online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/formats-and-values/sustainability.html">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/marketing/marketing-and-outreach.html">Marketing and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/marketing/web-comms-brand.html">Web, comms and brand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/contracts-legal-insurance.html">Contracts, legal and insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/finance.html">Finance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/privacy-gdpr.html">Privacy and GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/sponsors.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/ticketing-and-registration.html">Ticketing and registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/on-site-production/av-recording-internet.html">AV, recording and internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/on-site-production/print-and-merch.html">Print and merch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/on-site-production/signage-and-showtime.html">Signage and showtime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/accessibility-and-inclusion.html">Accessibility and inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/code-of-conduct-operations.html">Code of Conduct operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/health-safety-emergencies.html">Health, safety and emergencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/visas-and-travel.html">Visas and travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/volunteers-and-roles.html">Volunteers and roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/business-and-side-tracks.html">Business and side tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/cfp-and-selection.html">CFP and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/keynotes-and-invited-talks.html">Keynotes and invited talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/programme-portfolio.html">Programme portfolio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/speakers-and-speaker-care.html">Speakers and speaker care</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/trainings.html">Trainings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/social/social-events-and-party.html">Social events and party</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/catering.html">Catering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/city-selection.html">City selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/hotels-and-local-logistics.html">Hotels and local logistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/venue.html">Venue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Risk and incidents</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="risk/risk-method.html">The risk register method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/cross-cutting-risks.html">Cross-cutting risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/cash-flow-crunch.html">Playbook: cash-flow crunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/coc-incident.html">Playbook: Code of Conduct incident</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/force-majeure.html">Playbook: force majeure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/key-person-loss.html">Playbook: key-person loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/low-ticket-sales.html">Playbook: low ticket sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/speaker-dropout.html">Playbook: speaker dropout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/venue-loss.html">Playbook: venue loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/wifi-failure.html">Playbook: Wi-Fi failure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Running the handbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="running/annual-ritual.html">The annual ritual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/extend.html">Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/lesson-authoring-rules.html">Lesson authoring rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/thin-registry-about.html">About the thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/update.html">Update</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Evidence and archive</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="evidence/conference-index.html">Conference index</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="evidence/source-bibliography.html">Source bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="evidence/lessons-ledger.html">Lessons ledger</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/lessons-ledger.html">Lessons ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/requirements-register.html">Foundation requirements register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/source-bibliography.html">Source bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/br.html">Annex: Brazil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/de.html">Annex: Germany</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/nl.html">Annex: Netherlands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/us.html">Annex: United States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/variants/small-budget.html">Annex: small-budget variant</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="appendices/survey-template.html">Template: attendee survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/post-mortem-template.html">Template: post-mortem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/cfp-template.html">Template: call for proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/sponsor-prospectus-template.html">Template: sponsor prospectus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/budget-sheet-template.html">Template: budget sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/role-descriptions-template.html">Template: role descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/tailoring-record-template.html">Template: Tailoring Record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/hledger-accounting-setup.html">Template: hledger accounting setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/ticket-purchase-prediction-model.html">Ticket-purchase prediction model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/global-south-grant-argumentation.html">Global south grant argumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/t-minus-checklist.html">T-minus checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/seattle-2006-digest.html">Annotated Seattle 2006 digest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/glossary.html">Glossary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conference records</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="conferences/2026-maastricht/conference-2026-maastricht.html">Plone Conference 2026, Maastricht: case file</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Generated registers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/lesson-index.html">Lesson index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/risk-register.html">Risk register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/thin-registry.html">Thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/decision-register.html">Decision register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/coverage-map.html">Coverage map</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Plone Conference Organizers Handbook</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="plone-conference-organizers-handbook">
+<h1>Plone Conference Organizers Handbook<a class="headerlink" href="#plone-conference-organizers-handbook" title="Link to this heading">#</a></h1>
+<p>This handbook is a public, community-maintained manual for organizing Plone conferences.
+It collects what previous organizers learned, so that the next team doesn't start from nothing.
+Both spellings, organizers and organisers, point here.
+Every part is written; pages carry a maturity of stub or draft, and thin content is marked where it occurs.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-4 sd-g-lg-5 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-rocket sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"></path></svg>
+Start here</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">What this handbook is, who wrote it, and how honestly it says what it knows and what it does not.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="start/about.html"><span>Go to Start here</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="start/about.html"><span class="doc">About and purpose</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-git-branch sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"></path><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"></path><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"></path></svg>
+Choose your path</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Entry points by role and by countdown: bidder, chair, treasurer, programme lead, sponsor lead, volunteer coordinator.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="start/choose-your-path.html"><span>Go to Choose your path</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="start/choose-your-path.html"><span class="doc">Choose your path</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-briefcase sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 1.75C7.5.784 8.284 0 9.25 0h5.5c.966 0 1.75.784 1.75 1.75V4h4.75c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 21.25 22H2.75A1.75 1.75 0 0 1 1 20.25V5.75C1 4.784 1.784 4 2.75 4H7.5Zm-5 10.24v8.26c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25v-8.26A4.235 4.235 0 0 1 18.75 13H5.25a4.235 4.235 0 0 1-2.75-1.01Zm19-3.24v-3a.25.25 0 0 0-.25-.25H2.75a.25.25 0 0 0-.25.25v3a2.75 2.75 0 0 0 2.75 2.75h13.5a2.75 2.75 0 0 0 2.75-2.75Zm-6.5-7a.25.25 0 0 0-.25-.25h-5.5a.25.25 0 0 0-.25.25V4h6Z"></path></svg>
+The organizer's job</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Stakeholders, the bid, community and speaker expectations, the team, the master timeline and the handover contract.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="job/stakeholder-map.html"><span>Go to The organizer's job</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="job/stakeholder-map.html"><span class="doc">Stakeholder map</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-tools sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"></path></svg>
+Workstreams</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Thirty chapters: money and law, programme, people, marketing, venue and logistics, production, social, formats.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="workstreams/index.html"><span>Go to Workstreams</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="workstreams/index.html"><span class="doc">Workstreams</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-alert sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 17.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-.25-8.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z"></path><path d="M9.836 3.244c.963-1.665 3.365-1.665 4.328 0l8.967 15.504c.963 1.667-.24 3.752-2.165 3.752H3.034c-1.926 0-3.128-2.085-2.165-3.752Zm3.03.751a1.002 1.002 0 0 0-1.732 0L2.168 19.499A1.002 1.002 0 0 0 3.034 21h17.932a1.002 1.002 0 0 0 .866-1.5L12.866 3.994Z"></path></svg>
+Risk and incidents</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The risk method, the cross-cutting risks, and eight incident playbooks from Wi-Fi failure to force majeure.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="risk/risk-method.html"><span>Go to Risk and incidents</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="risk/risk-method.html"><span class="doc">The risk register method</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-sync sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.38 8A9.502 9.502 0 0 1 12 2.5a9.502 9.502 0 0 1 9.215 7.182.75.75 0 1 0 1.456-.364C21.473 4.539 17.15 1 12 1a10.995 10.995 0 0 0-9.5 5.452V4.75a.75.75 0 0 0-1.5 0V8.5a1 1 0 0 0 1 1h3.75a.75.75 0 0 0 0-1.5H3.38Zm-.595 6.318a.75.75 0 0 0-1.455.364C2.527 19.461 6.85 23 12 23c4.052 0 7.592-2.191 9.5-5.451v1.701a.75.75 0 0 0 1.5 0V15.5a1 1 0 0 0-1-1h-3.75a.75.75 0 0 0 0 1.5h2.37A9.502 9.502 0 0 1 12 21.5c-4.446 0-8.181-3.055-9.215-7.182Z"></path></svg>
+Running the handbook</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Governance, the annual update ritual after each conference, and how to update or extend the content.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="running/annual-ritual.html"><span>Go to Running the handbook</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="running/annual-ritual.html"><span class="doc">The annual ritual</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-database sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.25c2.487 0 4.773.402 6.466 1.079.844.337 1.577.758 2.112 1.264.536.507.922 1.151.922 1.907v12.987l-.026.013h.026c0 .756-.386 1.4-.922 1.907-.535.506-1.268.927-2.112 1.264-1.693.677-3.979 1.079-6.466 1.079s-4.774-.402-6.466-1.079c-.844-.337-1.577-.758-2.112-1.264C2.886 19.9 2.5 19.256 2.5 18.5h.026l-.026-.013V5.5c0-.756.386-1.4.922-1.907.535-.506 1.268-.927 2.112-1.264C7.226 1.652 9.513 1.25 12 1.25ZM4 14.371v4.116l-.013.013H4c0 .211.103.487.453.817.351.332.898.666 1.638.962 1.475.589 3.564.971 5.909.971 2.345 0 4.434-.381 5.909-.971.739-.296 1.288-.63 1.638-.962.349-.33.453-.607.453-.817h.013L20 18.487v-4.116a7.85 7.85 0 0 1-1.534.8c-1.693.677-3.979 1.079-6.466 1.079s-4.774-.402-6.466-1.079a7.843 7.843 0 0 1-1.534-.8ZM20 12V7.871a7.85 7.85 0 0 1-1.534.8C16.773 9.348 14.487 9.75 12 9.75s-4.774-.402-6.466-1.079A7.85 7.85 0 0 1 4 7.871V12c0 .21.104.487.453.817.35.332.899.666 1.638.961 1.475.59 3.564.972 5.909.972 2.345 0 4.434-.382 5.909-.972.74-.295 1.287-.629 1.638-.96.35-.33.453-.607.453-.818ZM4 5.5c0 .211.103.487.453.817.351.332.898.666 1.638.962 1.475.589 3.564.971 5.909.971 2.345 0 4.434-.381 5.909-.971.739-.296 1.288-.63 1.638-.962.349-.33.453-.607.453-.817 0-.211-.103-.487-.453-.817-.351-.332-.898-.666-1.638-.962-1.475-.589-3.564-.971-5.909-.971-2.345 0-4.434.381-5.909.971-.739.296-1.288.63-1.638.962C4.104 5.013 4 5.29 4 5.5Z"></path></svg>
+Evidence and archive</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The archived sources, the 776-row lessons ledger, the conference data table and the requirements register.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="evidence/conference-index.html"><span>Go to Evidence and archive</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="evidence/conference-index.html"><span class="doc">Conference index</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-mortar-board sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.292 2.06v-.001l11.25 4.75a.749.749 0 0 1 0 1.382L19 10.108V15a.75.75 0 0 1-.11.391h-.001a2.84 2.84 0 0 1-.392.482c-.249.256-.625.58-1.163.896-1.08.638-2.776 1.23-5.334 1.23-.673 0-1.286-.041-1.846-.113a.75.75 0 0 1 .192-1.487c.492.063 1.042.1 1.654.1 2.317 0 3.746-.533 4.572-1.021.31-.178.596-.397.849-.65l.079-.085V10.74l-5.208 2.2a.75.75 0 0 1-.584 0L5.75 10.424v3.17c.502.129.96.391 1.327.758.579.578.923 1.41.923 2.428v4.5a.761.761 0 0 1-.345.634 2.157 2.157 0 0 1-.21.117 3.923 3.923 0 0 1-.52.213A6.121 6.121 0 0 1 5 22.532a6.092 6.092 0 0 1-1.925-.288 4.065 4.065 0 0 1-.52-.213 1.816 1.816 0 0 1-.22-.124.757.757 0 0 1-.335-.624v-4.5c0-1.02.344-1.85.923-2.43a2.904 2.904 0 0 1 1.327-.757V9.793L.458 8.19a.75.75 0 0 1 0-1.38l11.25-4.75a.75.75 0 0 1 .584 0ZM12 11.436 21.322 7.5 12 3.564 2.678 7.5ZM5 15c-.377 0-.745.141-1.017.413-.265.265-.483.7-.483 1.368v4.022c.299.105.797.228 1.5.228s1.201-.123 1.5-.228V16.78c0-.669-.218-1.103-.483-1.368A1.433 1.433 0 0 0 5 15Z"></path></svg>
+The 2026 case file</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Plone Conference 2026 in Maastricht: what was planned, what happened, and what the attendee survey said.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><span class="sd-d-grid"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference internal" href="conferences/2026-maastricht/conference-2026-maastricht.html"><span>Go to the case file</span></a></span></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="conferences/2026-maastricht/conference-2026-maastricht.html"><span class="doc">Plone Conference 2026, Maastricht: case file</span></a></div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Start here</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="start/about.html">About and purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/choose-your-path.html">Choose your path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/context-dimensions.html">Context dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/honesty-statement.html">Honesty statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/how-to-read-lessons.html">How to read lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/license-and-contribute.html">License and contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/problem-history.html">The problem history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/tailor.html">Tailor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/use.html">Use: your first 90 days</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The organizer's job</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="job/bid-and-selection.html">Bid and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/community-and-speaker-expectations.html">Community and speaker expectations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/defining-success.html">Defining success</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/handover-contract.html">Handover contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/legal-entity-and-financial-agent.html">Legal entity and financial agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/master-timeline.html">Master timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/stakeholder-map.html">Stakeholder map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="job/team-and-governance.html">Team and governance</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workstreams</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/index.html">Workstreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/formats-and-values/hybrid-online.html">Hybrid and online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/formats-and-values/sustainability.html">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/marketing/marketing-and-outreach.html">Marketing and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/marketing/web-comms-brand.html">Web, comms and brand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/contracts-legal-insurance.html">Contracts, legal and insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/finance.html">Finance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/privacy-gdpr.html">Privacy and GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/sponsors.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/money-and-law/ticketing-and-registration.html">Ticketing and registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/on-site-production/av-recording-internet.html">AV, recording and internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/on-site-production/print-and-merch.html">Print and merch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/on-site-production/signage-and-showtime.html">Signage and showtime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/accessibility-and-inclusion.html">Accessibility and inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/code-of-conduct-operations.html">Code of Conduct operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/health-safety-emergencies.html">Health, safety and emergencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/visas-and-travel.html">Visas and travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/people/volunteers-and-roles.html">Volunteers and roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/business-and-side-tracks.html">Business and side tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/cfp-and-selection.html">CFP and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/keynotes-and-invited-talks.html">Keynotes and invited talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/programme-portfolio.html">Programme portfolio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/speakers-and-speaker-care.html">Speakers and speaker care</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/programme/trainings.html">Trainings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/social/social-events-and-party.html">Social events and party</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/catering.html">Catering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/city-selection.html">City selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/hotels-and-local-logistics.html">Hotels and local logistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workstreams/venue-and-logistics/venue.html">Venue</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Risk and incidents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="risk/risk-method.html">The risk register method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/cross-cutting-risks.html">Cross-cutting risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/cash-flow-crunch.html">Playbook: cash-flow crunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/coc-incident.html">Playbook: Code of Conduct incident</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/force-majeure.html">Playbook: force majeure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/key-person-loss.html">Playbook: key-person loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/low-ticket-sales.html">Playbook: low ticket sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/speaker-dropout.html">Playbook: speaker dropout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/venue-loss.html">Playbook: venue loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk/playbooks/wifi-failure.html">Playbook: Wi-Fi failure</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Running the handbook</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="running/annual-ritual.html">The annual ritual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/extend.html">Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/lesson-authoring-rules.html">Lesson authoring rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/thin-registry-about.html">About the thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running/update.html">Update</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Evidence and archive</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="evidence/conference-index.html">Conference index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/lessons-ledger.html">Lessons ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/requirements-register.html">Foundation requirements register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evidence/source-bibliography.html">Source bibliography</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/br.html">Annex: Brazil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/de.html">Annex: Germany</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/nl.html">Annex: Netherlands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/jurisdictions/us.html">Annex: United States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annexes/variants/small-budget.html">Annex: small-budget variant</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendices/survey-template.html">Template: attendee survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/post-mortem-template.html">Template: post-mortem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/cfp-template.html">Template: call for proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/sponsor-prospectus-template.html">Template: sponsor prospectus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/budget-sheet-template.html">Template: budget sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/role-descriptions-template.html">Template: role descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/tailoring-record-template.html">Template: Tailoring Record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/hledger-accounting-setup.html">Template: hledger accounting setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/ticket-purchase-prediction-model.html">Ticket-purchase prediction model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/global-south-grant-argumentation.html">Global south grant argumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/t-minus-checklist.html">T-minus checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/seattle-2006-digest.html">Annotated Seattle 2006 digest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/glossary.html">Glossary</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conference records</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="conferences/2026-maastricht/conference-2026-maastricht.html">Plone Conference 2026, Maastricht: case file</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Generated registers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/lesson-index.html">Lesson index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/risk-register.html">Risk register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/thin-registry.html">Thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/decision-register.html">Decision register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/coverage-map.html">Coverage map</a></li>
+</ul>
+</div>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="start/about.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">About and purpose</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Plone community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Plone community, CC BY 4.0.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>The text and illustrations in this handbook are licensed under a Creative Commons Attribution 4.0 International license. Plone and the Plone® logo are registered trademarks of the Plone Foundation. For guidelines on the permitted uses of the Plone trademarks, see <a href="https://plone.org/foundation/logo">https://plone.org/foundation/logo</a>.</p>
+</div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

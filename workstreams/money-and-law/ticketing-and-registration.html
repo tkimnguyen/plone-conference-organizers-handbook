@@ -1,0 +1,946 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="How to choose a ticketing platform, set prices and tiers, handle VAT and collect the data a Plone conference needs from every attendee." lang="en" name="description" xml:lang="en" />
+<meta content="Plone, Plone Conference, ticketing, registration, pricing, VAT, tickets" name="keywords" />
+<meta property="og:title" content="Ticketing and registration" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="workstreams/money-and-law/ticketing-and-registration.html" />
+<meta property="og:site_name" content="Plone Conference Organizers Handbook" />
+<meta property="og:description" content="Why it matters: Registration is where income, attendee data and the first impression meet. A platform that fails at the busiest moment costs sales, and a price set by guesswork can cost the break-e..." />
+<meta property="og:locale" content="en_US" />
+
+    <title>Ticketing and registration &#8212; Plone Conference Organizers Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=0fc419ee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/plone-sphinx-theme.css?v=03afa5dd" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../../_static/hb.css?v=932d0239" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../../_static/documentation_options.js?v=b9472d72"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/plone-sphinx-theme.js?v=ce3a8c55"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../../_static/design-tabs.js?v=fcb327ea"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'workstreams/money-and-law/ticketing-and-registration';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="AV, recording and internet" href="../on-site-production/av-recording-internet.html" />
+    <link rel="prev" title="Sponsors" href="sponsors.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Plone Conference Organizers Handbook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../start/about.html">About and purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/choose-your-path.html">Choose your path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/context-dimensions.html">Context dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/honesty-statement.html">Honesty statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/how-to-read-lessons.html">How to read lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/license-and-contribute.html">License and contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/problem-history.html">The problem history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/tailor.html">Tailor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/use.html">Use: your first 90 days</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The organizer's job</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../job/bid-and-selection.html">Bid and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/community-and-speaker-expectations.html">Community and speaker expectations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/defining-success.html">Defining success</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/handover-contract.html">Handover contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/legal-entity-and-financial-agent.html">Legal entity and financial agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/master-timeline.html">Master timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/stakeholder-map.html">Stakeholder map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/team-and-governance.html">Team and governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workstreams</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Workstreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats-and-values/hybrid-online.html">Hybrid and online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../formats-and-values/sustainability.html">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/marketing-and-outreach.html">Marketing and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../marketing/web-comms-brand.html">Web, comms and brand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contracts-legal-insurance.html">Contracts, legal and insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finance.html">Finance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy-gdpr.html">Privacy and GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ticketing and registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../on-site-production/av-recording-internet.html">AV, recording and internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../on-site-production/print-and-merch.html">Print and merch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../on-site-production/signage-and-showtime.html">Signage and showtime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../people/accessibility-and-inclusion.html">Accessibility and inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../people/code-of-conduct-operations.html">Code of Conduct operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../people/health-safety-emergencies.html">Health, safety and emergencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../people/visas-and-travel.html">Visas and travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../people/volunteers-and-roles.html">Volunteers and roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/business-and-side-tracks.html">Business and side tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/cfp-and-selection.html">CFP and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/keynotes-and-invited-talks.html">Keynotes and invited talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/programme-portfolio.html">Programme portfolio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/speakers-and-speaker-care.html">Speakers and speaker care</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programme/trainings.html">Trainings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../social/social-events-and-party.html">Social events and party</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../venue-and-logistics/catering.html">Catering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../venue-and-logistics/city-selection.html">City selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../venue-and-logistics/hotels-and-local-logistics.html">Hotels and local logistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../venue-and-logistics/venue.html">Venue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Risk and incidents</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../risk/risk-method.html">The risk register method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/cross-cutting-risks.html">Cross-cutting risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/cash-flow-crunch.html">Playbook: cash-flow crunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/coc-incident.html">Playbook: Code of Conduct incident</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/force-majeure.html">Playbook: force majeure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/key-person-loss.html">Playbook: key-person loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/low-ticket-sales.html">Playbook: low ticket sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/speaker-dropout.html">Playbook: speaker dropout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/venue-loss.html">Playbook: venue loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/wifi-failure.html">Playbook: Wi-Fi failure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Running the handbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../running/annual-ritual.html">The annual ritual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/extend.html">Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/lesson-authoring-rules.html">Lesson authoring rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/thin-registry-about.html">About the thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/update.html">Update</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Evidence and archive</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../evidence/conference-index.html">Conference index</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/source-bibliography.html">Source bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/lessons-ledger.html">Lessons ledger</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/lessons-ledger.html">Lessons ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/requirements-register.html">Foundation requirements register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/source-bibliography.html">Source bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/br.html">Annex: Brazil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/de.html">Annex: Germany</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/nl.html">Annex: Netherlands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/us.html">Annex: United States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/variants/small-budget.html">Annex: small-budget variant</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/survey-template.html">Template: attendee survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/post-mortem-template.html">Template: post-mortem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/cfp-template.html">Template: call for proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/sponsor-prospectus-template.html">Template: sponsor prospectus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/budget-sheet-template.html">Template: budget sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/role-descriptions-template.html">Template: role descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/tailoring-record-template.html">Template: Tailoring Record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/hledger-accounting-setup.html">Template: hledger accounting setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/ticket-purchase-prediction-model.html">Ticket-purchase prediction model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/global-south-grant-argumentation.html">Global south grant argumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/t-minus-checklist.html">T-minus checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/seattle-2006-digest.html">Annotated Seattle 2006 digest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conference records</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../conferences/2026-maastricht/conference-2026-maastricht.html">Plone Conference 2026, Maastricht: case file</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Generated registers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../generated/lesson-index.html">Lesson index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/risk-register.html">Risk register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/thin-registry.html">Thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/decision-register.html">Decision register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/coverage-map.html">Coverage map</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook/issues/new?title=Issue%20on%20page%20%2Fworkstreams/money-and-law/ticketing-and-registration.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/workstreams/money-and-law/ticketing-and-registration.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ticketing and registration</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-it-matters">Why it matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applies-when">Applies when</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decisions-you-must-make">Decisions you must make</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to">How-to</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-and-general-lessons">Principles and general lessons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-notes">Case notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risks">Risks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-content">Thin content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="ticketing-and-registration">
+<h1>Ticketing and registration<a class="headerlink" href="#ticketing-and-registration" title="Link to this heading">#</a></h1>
+<section id="why-it-matters">
+<h2>Why it matters<a class="headerlink" href="#why-it-matters" title="Link to this heading">#</a></h2>
+<p>Registration is where income, attendee data and the first impression meet.
+A platform that fails at the busiest moment costs sales, and a price set by guesswork can cost the break-even point.
+Missing per-attendee data surfaces later as lost shirt sizes, dietary needs and unreachable attendees.</p>
+<p>The choices reach beyond the registration desk.
+The selling entity decides the VAT regime, the platform decides the fees and the refund options, and the tiers decide who can afford to come.
+Participants in this community buy late and often ask for group or reduced prices.</p>
+<p>The steps are in the How-to section.
+Budget questions sit in <code class="docutils literal notranslate"><span class="pre">finance</span></code>.</p>
+</section>
+<section id="applies-when">
+<h2>Applies when<a class="headerlink" href="#applies-when" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">all</span></code> Every Plone conference sells or issues tickets, including free and online editions.</p></li>
+</ul>
+</section>
+<section id="decisions-you-must-make">
+<h2>Decisions you must make<a class="headerlink" href="#decisions-you-must-make" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">DEFAULT</span> (basis: L-1048, L-3017) <strong>Will you buy a ticketing service instead of building one?</strong> Both teams used a vendor service and kept registration simple. Choose one with a usable API. (decide-by: T-9m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">OPTION</span> <strong>Which entity sells the tickets, judged by the final price for a buyer who cannot recover VAT?</strong> The debrief's university exemption and Foundation assumptions need jurisdiction-specific confirmation (L-5002, R-035, R-036). (decide-by: T-12m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">OPTION</span> <strong>Which platform and payment methods, compared after fees?</strong> Count platform fees against net revenue (L-5016). A self-hosted pretix with invoice or bank transfer may suit a community event, if you weigh operating effort and payment access first (L-5018). (decide-by: T-9m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">OPTION</span> <strong>Will you publish a no-refund, no-transfer policy?</strong> The 2011 organizer kept it, with a few transfers for extreme cases at discretion, because an open policy could get out of control (L-3016). (decide-by: T-6m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">MUST</span> (req: R-013; as-of: 2026-11-02) <strong>Do buyers agree to abide by the Plone Code of Conduct at purchase?</strong> Publish the code on the website as well (L-4037). (decide-by: T-6m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">OPTION</span> <strong>Will the ticket flow collect an agreement to be photographed?</strong> The Foundation's planning schedule lists it (R-014, S004). Legal sufficiency is a question for counsel, see <code class="docutils literal notranslate"><span class="pre">privacy-gdpr</span></code>. (decide-by: T-6m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">DEFAULT</span> (basis: L-1043, L-6037) <strong>Will you ask prospective attendees what they would pay?</strong> Seattle surveyed willingness to pay before setting the price, and Maastricht found that price perception was a blind spot. (decide-by: T-9m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">DEFAULT</span> (basis: L-1044, L-2058, L-4145) <strong>Which tiers will you offer?</strong> Early bird closing at a fixed date, regular, speaker and one-day tickets were all used. State each tier's end date on the site. (decide-by: T-6m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">DEFAULT</span> (basis: L-1047, L-3012) <strong>Have you budgeted complimentary and speaker tickets explicitly?</strong> One conference gave away about a fifth of its tickets, and another grossly underestimated the number. (decide-by: T-6m)</p></li>
+<li><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">DEFAULT</span> (basis: L-4067, L-5003) <strong>Will you fund a reduced-price route?</strong> Affordability is a key issue for students and the self-employed, and one conference funded a Global South route as an access budget. Hosting calls from 2015 to 2019 set a target of USD 250 to 450 per person (R-011). (decide-by: T-9m)</p></li>
+</ul>
+</section>
+<section id="how-to">
+<h2>How-to<a class="headerlink" href="#how-to" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Write the requirements: one buyer registers several people with full details for each, people register on behalf of others, international addresses work, prices tier by date and unlock by code, and add-ons such as trainings are sold (L-1050).
+Done when each is tested on the chosen platform.</p></li>
+<li><p>Support institutions: an invoice, card payment outside the web form, and payment by check or bank transfer (L-1051).
+Done when a test invoice is issued without manual work.</p></li>
+<li><p>Collect an e-mail address for every attendee, not only the buyer (L-3018).
+Done when a multi-ticket test order produces one address per person.</p></li>
+<li><p>Offer a group discount and advertise it (L-3015), since groups of more than six come more motivated (L-3080).
+Done when the discount appears on the ticket page.</p></li>
+<li><p>Put the Code of Conduct and the photo agreement into the purchase flow (L-4037).
+Done when a test purchase cannot finish without both.</p></li>
+<li><p>Keep sales open until very late, especially when the venue is easy to reach from Europe (L-4045).
+Done when the closing date is tied to the dates at which food and shirt counts are due.</p></li>
+<li><p>Publish refund and VAT instructions before the campaign starts, and compare weekly sales with a dated forecast.
+Done when support questions point to one page. See <code class="docutils literal notranslate"><span class="pre">low-ticket-sales</span></code> if sales fall behind.</p></li>
+</ol>
+</section>
+<section id="principles-and-general-lessons">
+<h2>Principles and general lessons<a class="headerlink" href="#principles-and-general-lessons" title="Link to this heading">#</a></h2>
+<div class="hb-lesson hb-general note admonition">
+<p class="admonition-title">[general]</p>
+<p>lesson | scope: general | source: S009 | ledger: L-1048 | confidence: reported | status: active | basis: structural | reason: Registration handles money and personal data, and a custom system must be maintained by a volunteer team that changes every year.</p>
+<p>Do not write custom registration software, and keep the process as simple as possible.</p>
+</div>
+<div class="hb-lesson hb-general note admonition">
+<p class="admonition-title">[general]</p>
+<p>lesson | scope: general | source: S088 | ledger: L-1052 | confidence: observed | status: active | basis: structural | reason: A ticket is often paid by an employer or administrator, so payer and attendee differ and both need records.</p>
+<p>Record the attendee apart from the payer, and send receipts to everyone, so the desk and the badge show the attendee.</p>
+</div>
+<div class="hb-lesson hb-general note admonition">
+<p class="admonition-title">[general]</p>
+<p>lesson | scope: general | source: S036 | ledger: L-2080 | confidence: observed | status: active | basis: structural | reason: Registration depends on third-party payment services the team does not control, so any of them can fail at the busiest moment.</p>
+<p>Have a backup plan for registration and payment problems.</p>
+</div>
+<p>Four themes stay below the promotion rule.
+Price setting is hard: San Francisco advised raising the price a bit if in doubt (L-3004) and called guessing 100 percent voodoo (L-3011).
+Buyers purchase late: Arnhem asked for ways to make people buy earlier (L-2103), and the Foundation's planning schedule says people buy even very late (L-4044).
+Affordability and access matter (L-4067, L-5003).
+Seattle recommended a published one-day rate, with one-day attendees marked on badges (L-1046).</p>
+</section>
+<section id="case-notes">
+<h2>Case notes<a class="headerlink" href="#case-notes" title="Link to this heading">#</a></h2>
+<div class="hb-lesson hb-specific hb-age-recent note admonition">
+<p class="admonition-title">[specific · 2026 · Maastricht · 0 y]</p>
+<p>lesson | scope: specific | year: 2026 | place: Maastricht | org: Plone Conference 2026 organizing team | source: S082 | ledger: L-4227 | confidence: observed | status: active</p>
+<p>The Business Track ticket cost 180 euros including 21 percent Dutch VAT, and a Friday one-day ticket at the same price included it (as of 2026-09).</p>
+</div>
+<div class="hb-lesson hb-specific hb-age-recent note admonition">
+<p class="admonition-title">[specific · 2026 · Maastricht · 0 y]</p>
+<p>lesson | scope: specific | year: 2026 | place: Maastricht | org: Plone Conference 2026 organizing team | source: S098 | ledger: L-5017 | confidence: observed | status: active</p>
+<p>The fee is verified: 2.89 EUR per ticket paid via Stripe, as of 2026-11.</p>
+</div>
+<div class="hb-lesson hb-specific hb-age-recent note admonition">
+<p class="admonition-title">[specific · 2026 · Maastricht · 0 y]</p>
+<p>lesson | scope: specific | year: 2026 | place: Maastricht | org: Plone Conference 2026 organizing team | source: S110 | ledger: L-6036, L-6037, L-6048 | confidence: reported | status: active</p>
+<p>Value for money averaged 4.30 on 20 ratings, and nobody mentioned the ticket price.
+The analyst's first reading, that venue cost drove low scores, was contradicted.
+One respondent asked for earlier website, advertising and ticket sales.</p>
+</div>
+<div class="hb-lesson hb-specific hb-age-mid note admonition">
+<p class="admonition-title">[specific · 2020 · Online · 6 y]</p>
+<p>lesson | scope: specific | year: 2020 | place: Online | org: Plone Foundation | source: S063 | ledger: L-4166 | confidence: observed | status: active</p>
+<p>The online edition's early-bird window lasted one week, and regular registration ran until the day before the start.</p>
+</div>
+<div class="hb-lesson hb-specific hb-age-mid note admonition">
+<p class="admonition-title">[specific · 2019 · Ferrara · 7 y]</p>
+<p>lesson | scope: specific | year: 2019 | place: Ferrara | org: RedTurtle | source: S060 | ledger: L-4159 | confidence: observed | status: active</p>
+<p>One full pass covered training, conference, lunches, party and sprints at 380 euros plus fee and VAT, and a one-day pass cost 150 euros (as of 2019).</p>
+</div>
+<div class="hb-lesson hb-specific hb-age-mid note admonition">
+<p class="admonition-title">[specific · 2018 · Tokyo · 8 y]</p>
+<p>lesson | scope: specific | year: 2018 | place: Tokyo | org: Plone Conference 2018 Steering Committee | source: S057, S058 | ledger: L-4145, L-4146, L-4147 | confidence: observed | status: active</p>
+<p>The range included a one-day ticket without dinner.
+Four weeks out, the organizers asked everyone who already planned to come to buy early, because shirts and food needed numbers.
+Multi-ticket orders arrived only late in the sales period.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2013 · Brasília · 13 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2013 | place: Brasília | org: PloneGov-BR and APyB | source: S042, S093 | ledger: L-3094, L-3131 | confidence: observed | status: active</p>
+<p class="sd-card-text">Free registration fell through when the venue agreement could not be kept.
+Registration opened at a symbolic fee, with student and member rates rising by date, and one registration covered both co-located events.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2012 · Arnhem · 14 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2012 | place: Arnhem | org: Four Digits | source: S036 | ledger: L-2079, L-2084 | confidence: observed | status: active</p>
+<p class="sd-card-text">Payments failed at the switch from early-bird to regular price, and e-mail requests were hard to track.
+Break-even was 220 tickets, 194 were sold four weeks out, and a late rush reached 250.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2011 · San Francisco · 15 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2011 | place: San Francisco | org: Plone Conference 2011 organizing team | source: S024 | ledger: L-3012, L-3014 | confidence: observed | status: active</p>
+<p class="sd-card-text">The team set the budget first, worked back to a price and grossly underestimated complimentary tickets.
+Setting the speaker rate equal to the early-bird rate left no refunds to manage.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2011 · San Francisco · 15 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2011 | place: San Francisco | org: Plone Conference 2011 organizing team | source: S024 | ledger: L-3017, L-3020, L-3021 | confidence: observed | status: active</p>
+<p class="sd-card-text">The team chose the cheapest of three services with a usable API, and a chat bot reported live sales from it.
+Organizers could not process transfers or refunds, so each took a call to the vendor.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2011 · San Francisco · 15 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2011 | place: San Francisco | org: Plone Conference 2011 organizing team | source: S024, S034 | ledger: L-3019, L-3082 | confidence: observed | status: active</p>
+<p class="sd-card-text">Group orders asked questions such as shirt size once per order, and ticketing was not integrated with marketing.
+The team held only a partial attendee e-mail list.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2010 · Bristol · 16 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2010 | place: Bristol | org: Netsight Internet Solutions | source: S016, S019 | ledger: L-2030, L-2058 | confidence: observed | status: active</p>
+<p class="sd-card-text">Processor fees made up about one sixth of per-person costs.
+The bid committed to a ceiling on the registration fee and an early-bird reduction about two months ahead.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2009 · Budapest · 17 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2009 | place: Budapest | org: Greenfinity | source: S013 | ledger: L-4102 | confidence: reported | status: active</p>
+<p class="sd-card-text">Registration cost 150 euros early bird and 200 euros full price, below earlier years, because regional prices ran lower (as of 2009-10).</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2007 · Naples · 19 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2007 | place: Naples | org: Abstract Open Solutions | source: S010 | ledger: L-4090 | confidence: observed | status: active</p>
+<p class="sd-card-text">The bid priced registration at 300 to 350 euros, covering sessions, a venue shuttle, two coffee breaks and lunch each day (as of the 2006 bid).</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2006 · Seattle · 20 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2006 | place: Seattle | org: ONE/Northwest | source: S009, S085 | ledger: L-1043, L-1044 | confidence: observed | status: active</p>
+<p class="sd-card-text">A May 2006 survey asked the most people would pay, and 43 percent chose USD 300 (as of 2006, S085).
+Pricing followed: USD 300 regular and USD 250 early bird, closing eight weeks out.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2006 · Seattle · 20 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2006 | place: Seattle | org: ONE/Northwest | source: S009, S090 | ledger: L-1045, L-1047 | confidence: observed | status: active</p>
+<p class="sd-card-text">No student or nonprofit discounts were offered, to keep registration simple.
+Of 337 attendees, 68 held complimentary registrations, 44 of them speakers.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 hb-lesson hb-specific hb-age-old hb-stale-prone note">
+<summary class="sd-summary-title sd-card-header admonition-title">
+<span class="sd-summary-text">[specific · 2006 · Seattle · 20 y] stale-prone</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">lesson | scope: specific | year: 2006 | place: Seattle | org: ONE/Northwest | source: S009 | ledger: L-1049 | confidence: observed | status: active</p>
+<p class="sd-card-text">The organizers chose a small local ticketing company for its low price and accountability, accepting fewer features.</p>
+</div>
+</details></section>
+<section id="risks">
+<h2>Risks<a class="headerlink" href="#risks" title="Link to this heading">#</a></h2>
+<div class="hb-risk hb-likelihood-medium hb-impact-high warning admonition" id="ticketing-and-registration-risk-the-payment-system-fails-at-the-price-switch">
+<p class="admonition-title">The payment system fails at the price switch</p>
+<p>risk | likelihood: medium | impact: high | mitigation: Test the switch between tiers with a real purchase before opening and keep a backup way to take orders | owner-role: registration lead</p>
+<p>Judged for a mid-size conference.</p>
+</div>
+<div class="hb-risk hb-likelihood-medium hb-impact-high warning admonition" id="ticketing-and-registration-risk-sales-stay-below-break-even">
+<p class="admonition-title">Sales stay below break-even</p>
+<p>risk | likelihood: medium | impact: high | mitigation: Track weekly sales against a dated forecast and set decision points before cutting costs | owner-role: registration lead | playbook: low-ticket-sales</p>
+<p>Late buying can hide or mimic a shortfall.</p>
+</div>
+<div class="hb-risk hb-likelihood-medium hb-impact-medium warning admonition" id="ticketing-and-registration-risk-complimentary-tickets-are-underestimated">
+<p class="admonition-title">Complimentary tickets are underestimated</p>
+<p>risk | likelihood: medium | impact: medium | mitigation: Count sponsor, speaker, volunteer and contest tickets in the budget from the first version | owner-role: treasurer</p>
+<p>Free tickets cut revenue without appearing in sales numbers.</p>
+</div>
+<div class="hb-risk hb-likelihood-medium hb-impact-medium warning admonition" id="ticketing-and-registration-risk-per-attendee-data-is-lost-in-group-orders">
+<p class="admonition-title">Per-attendee data is lost in group orders</p>
+<p>risk | likelihood: medium | impact: medium | mitigation: Test a multi-ticket order and confirm that every attendee answers every question | owner-role: registration lead</p>
+<p>Missing answers show up on site as shirt sizes and dietary needs nobody recorded.</p>
+</div>
+</section>
+<section id="thin-content">
+<h2>Thin content<a class="headerlink" href="#thin-content" title="Link to this heading">#</a></h2>
+<div class="hb-thin hb-thin-gap warning admonition" id="ticketing-and-registration-thin-25-pricing-elasticity">
+<p class="admonition-title">Pricing elasticity</p>
+<p>thin | kind: gap | needs: Sales data by price and tier from several conferences, to show how price changes attendance | who-might-know: Past registration leads; Foundation Treasurer | area: pricing-elasticity</p>
+<p>No source measures the effect of price on sales.</p>
+</div>
+<div class="hb-thin hb-thin-gap warning admonition" id="ticketing-and-registration-thin-26-selling-entity-and-vat">
+<p class="admonition-title">Selling entity and VAT</p>
+<p>thin | kind: gap | needs: Verified answers on whether a university or the Foundation can sell tickets without VAT, per country | who-might-know: Foundation Board; tax advisers in host countries | area: jurisdiction-annexes</p>
+<p>R-035 and R-036 are pending Foundation questions.</p>
+</div>
+<div class="hb-thin hb-thin-single-source warning admonition" id="ticketing-and-registration-thin-27-platform-fees-are-unverified">
+<p class="admonition-title">Platform fees are unverified</p>
+<p>thin | kind: single-source | needs: Dated published tariffs for the platforms organizers use, with a net-revenue comparison | who-might-know: Treasurers of past conferences; platform vendors</p>
+<p>The only account is a hearsay debrief note.</p>
+</div>
+<div class="hb-thin hb-thin-stale warning admonition" id="ticketing-and-registration-thin-28-price-target">
+<p class="admonition-title">Price target</p>
+<p>thin | kind: stale | needs: A current statement of the affordability target in USD per person | who-might-know: Foundation Board; Conference Committee</p>
+<p>The USD 250 to 450 band dates from hosting calls of 2015 to 2019 (R-011).</p>
+</div>
+<div class="hb-thin hb-thin-single-source warning admonition" id="ticketing-and-registration-thin-29-online-and-hybrid-ticketing">
+<p class="admonition-title">Online and hybrid ticketing</p>
+<p>thin | kind: single-source | needs: A second account of tiers and registration windows for online or hybrid editions | who-might-know: Organizers of online and hybrid editions | area: hybrid-online</p>
+<p>One online edition is recorded.</p>
+</div>
+</section>
+<section id="sources-and-further-reading">
+<h2>Sources and further reading<a class="headerlink" href="#sources-and-further-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>S004 Plone Foundation, Conference Planning Schedule.</p></li>
+<li><p>S009 Seattle 2006, &quot;Things We Learned About Running a Plone Conference&quot;.</p></li>
+<li><p>S010 Naples 2007 conference record.</p></li>
+<li><p>S013 Budapest 2009 announcement and context.</p></li>
+<li><p>S016 Bristol 2010, &quot;Plone Conference 2010, The Numbers&quot;.</p></li>
+<li><p>S019 Bristol 2010 conference record and proposal.</p></li>
+<li><p>S024 San Francisco 2011, wiki page on tickets.</p></li>
+<li><p>S034 San Francisco 2011, organizer interview.</p></li>
+<li><p>S036 Arnhem 2012, organizer wrap-up.</p></li>
+<li><p>S042 Brasília 2013, contemporary conference report.</p></li>
+<li><p>S057 Tokyo 2018 sponsorship program and ticket range.</p></li>
+<li><p>S058 Tokyo 2018, request for early ticket purchases.</p></li>
+<li><p>S060 Ferrara 2019 conference site.</p></li>
+<li><p>S063 Online 2020 post-event record.</p></li>
+<li><p>S082 Maastricht 2026 post-conference home page.</p></li>
+<li><p>S085 Seattle 2006 pre-conference survey.</p></li>
+<li><p>S088 Seattle 2006 logistics suggestions.</p></li>
+<li><p>S090 Seattle 2006 public conference budget.</p></li>
+<li><p>S093 Brasília 2013, PythonBrasil operational record.</p></li>
+<li><p>S098 Maastricht 2026, facts and lessons for the handbook.</p></li>
+<li><p>S110 Maastricht 2026 attendee survey analysis.</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="sponsors.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Sponsors</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../on-site-production/av-recording-internet.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">AV, recording and internet</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-it-matters">Why it matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applies-when">Applies when</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decisions-you-must-make">Decisions you must make</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to">How-to</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-and-general-lessons">Principles and general lessons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-notes">Case notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risks">Risks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-content">Thin content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Plone community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Plone community, CC BY 4.0.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>The text and illustrations in this handbook are licensed under a Creative Commons Attribution 4.0 International license. Plone and the Plone® logo are registered trademarks of the Plone Foundation. For guidelines on the permitted uses of the Plone trademarks, see <a href="https://plone.org/foundation/logo">https://plone.org/foundation/logo</a>.</p>
+</div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

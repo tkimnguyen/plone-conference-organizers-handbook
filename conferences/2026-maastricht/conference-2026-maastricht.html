@@ -1,0 +1,994 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Draft case file for Plone Conference 2026 in Maastricht: what was planned, what happened, and what the organizers learned." lang="en" name="description" xml:lang="en" />
+<meta content="Plone, Plone Conference, Maastricht, 2026, case file, post-mortem" name="keywords" />
+<meta property="og:title" content="Plone Conference 2026, Maastricht: case file" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="conferences/2026-maastricht/conference-2026-maastricht.html" />
+<meta property="og:site_name" content="Plone Conference Organizers Handbook" />
+<meta property="og:description" content="Draft, pending team sign-off. Under decision D9 this page stays marked draft until the 2026 organizing team confirms its voice and its facts. Text may change in version 1.1. Facts flagged as report..." />
+<meta property="og:locale" content="en_US" />
+
+    <title>Plone Conference 2026, Maastricht: case file &#8212; Plone Conference Organizers Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=0fc419ee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/plone-sphinx-theme.css?v=03afa5dd" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../../_static/hb.css?v=932d0239" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../../_static/documentation_options.js?v=b9472d72"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/plone-sphinx-theme.js?v=ce3a8c55"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../../_static/design-tabs.js?v=fcb327ea"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'conferences/2026-maastricht/conference-2026-maastricht';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lesson index" href="../../generated/lesson-index.html" />
+    <link rel="prev" title="Glossary" href="../../appendices/glossary.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Plone Conference Organizers Handbook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../start/about.html">About and purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/choose-your-path.html">Choose your path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/context-dimensions.html">Context dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/honesty-statement.html">Honesty statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/how-to-read-lessons.html">How to read lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/license-and-contribute.html">License and contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/problem-history.html">The problem history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/tailor.html">Tailor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/use.html">Use: your first 90 days</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The organizer's job</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../job/bid-and-selection.html">Bid and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/community-and-speaker-expectations.html">Community and speaker expectations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/defining-success.html">Defining success</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/handover-contract.html">Handover contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/legal-entity-and-financial-agent.html">Legal entity and financial agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/master-timeline.html">Master timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/stakeholder-map.html">Stakeholder map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/team-and-governance.html">Team and governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workstreams</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/index.html">Workstreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/formats-and-values/hybrid-online.html">Hybrid and online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/formats-and-values/sustainability.html">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/marketing/marketing-and-outreach.html">Marketing and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/marketing/web-comms-brand.html">Web, comms and brand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/contracts-legal-insurance.html">Contracts, legal and insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/finance.html">Finance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/privacy-gdpr.html">Privacy and GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/sponsors.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/ticketing-and-registration.html">Ticketing and registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/on-site-production/av-recording-internet.html">AV, recording and internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/on-site-production/print-and-merch.html">Print and merch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/on-site-production/signage-and-showtime.html">Signage and showtime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/accessibility-and-inclusion.html">Accessibility and inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/code-of-conduct-operations.html">Code of Conduct operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/health-safety-emergencies.html">Health, safety and emergencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/visas-and-travel.html">Visas and travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/volunteers-and-roles.html">Volunteers and roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/business-and-side-tracks.html">Business and side tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/cfp-and-selection.html">CFP and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/keynotes-and-invited-talks.html">Keynotes and invited talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/programme-portfolio.html">Programme portfolio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/speakers-and-speaker-care.html">Speakers and speaker care</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/trainings.html">Trainings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/social/social-events-and-party.html">Social events and party</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/catering.html">Catering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/city-selection.html">City selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/hotels-and-local-logistics.html">Hotels and local logistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/venue.html">Venue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Risk and incidents</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../risk/risk-method.html">The risk register method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/cross-cutting-risks.html">Cross-cutting risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/cash-flow-crunch.html">Playbook: cash-flow crunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/coc-incident.html">Playbook: Code of Conduct incident</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/force-majeure.html">Playbook: force majeure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/key-person-loss.html">Playbook: key-person loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/low-ticket-sales.html">Playbook: low ticket sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/speaker-dropout.html">Playbook: speaker dropout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/venue-loss.html">Playbook: venue loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/playbooks/wifi-failure.html">Playbook: Wi-Fi failure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Running the handbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../running/annual-ritual.html">The annual ritual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/extend.html">Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/lesson-authoring-rules.html">Lesson authoring rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/thin-registry-about.html">About the thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/update.html">Update</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Evidence and archive</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../evidence/conference-index.html">Conference index</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/source-bibliography.html">Source bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/lessons-ledger.html">Lessons ledger</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/lessons-ledger.html">Lessons ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/requirements-register.html">Foundation requirements register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/source-bibliography.html">Source bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/br.html">Annex: Brazil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/de.html">Annex: Germany</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/nl.html">Annex: Netherlands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/us.html">Annex: United States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/variants/small-budget.html">Annex: small-budget variant</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/survey-template.html">Template: attendee survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/post-mortem-template.html">Template: post-mortem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/cfp-template.html">Template: call for proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/sponsor-prospectus-template.html">Template: sponsor prospectus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/budget-sheet-template.html">Template: budget sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/role-descriptions-template.html">Template: role descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/tailoring-record-template.html">Template: Tailoring Record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/hledger-accounting-setup.html">Template: hledger accounting setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/ticket-purchase-prediction-model.html">Ticket-purchase prediction model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/global-south-grant-argumentation.html">Global south grant argumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/t-minus-checklist.html">T-minus checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/seattle-2006-digest.html">Annotated Seattle 2006 digest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conference records</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Plone Conference 2026, Maastricht: case file</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Generated registers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../generated/lesson-index.html">Lesson index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/risk-register.html">Risk register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/thin-registry.html">Thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/decision-register.html">Decision register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/coverage-map.html">Coverage map</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook/issues/new?title=Issue%20on%20page%20%2Fconferences/2026-maastricht/conference-2026-maastricht.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/conferences/2026-maastricht/conference-2026-maastricht.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Plone Conference 2026, Maastricht: case file</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-this-document">Purpose of this document</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-was-planned-and-what-happened">What was planned and what happened</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l1-nobody-maintains-the-tracker-in-the-last-six-weeks">L1: nobody maintains the tracker in the last six weeks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-the-drops-cluster-in-four-places">L2: the drops cluster in four places</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l3-one-level-of-hierarchy-too-many">L3: one level of hierarchy too many</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l4-reuse-tooling-visibility-and-external-dependencies">L4: reuse, tooling visibility and external dependencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fifteen-debrief-facts">The fifteen debrief facts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-attendee-survey">The attendee survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verdict-lists">Verdict lists</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#good-things-to-do-again">Good things to do again</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-we-did-not-do-that-you-probably-should-not-either">Things we did not do that you probably should not either</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-we-might-do-differently-next-time">Things we might do differently next time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbers">Numbers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-record-feeds">What this record feeds</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="plone-conference-2026-maastricht-case-file">
+<h1>Plone Conference 2026, Maastricht: case file<a class="headerlink" href="#plone-conference-2026-maastricht-case-file" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><strong>Draft, pending team sign-off.</strong>
+Under decision D9 this page stays marked draft until the 2026 organizing team confirms its voice and its facts.
+Text may change in version 1.1.
+Facts flagged as reported, hearsay or pending verification below are not yet advice.</p>
+</div></blockquote>
+<section id="purpose-of-this-document">
+<h2>Purpose of this document<a class="headerlink" href="#purpose-of-this-document" title="Link to this heading">#</a></h2>
+<p>This is the capstone record of Plone Conference 2026.
+It follows the skeleton of the Seattle 2006 account &quot;Things We Learned About Running a Plone Conference&quot;, the one early conference that wrote its lessons down.
+It feeds the handbook chapters, whose lessons point back to the evidence ledger rows cited here.
+It is also the post-mortem deliverable of the 2026 team, still in draft.
+Every claim cites a ledger row (L-5000 to L-5068, and L-6001 to L-6053 for the attendee survey) or a source (S098 to S110), and every row passed the D7 privacy screen.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Dates: 2026-09-21 to 2026-09-27, in Maastricht, the Netherlands.</p></li>
+<li><p>Schedule: trainings on Monday and Tuesday, a developer conference from Wednesday to Friday, a Business Track in parallel on Friday, and community sprints on Saturday and Sunday.</p></li>
+<li><p>Main venue: a conference hotel in Maastricht with three conference rooms, one of them an auditorium.</p></li>
+<li><p>Organizing entity: a volunteer-supported team led by a company-based organizer whose tax home differed from the event's country (F1, L-5000).</p></li>
+<li><p>Tickets: 117, of which 5 were party-only (S098, F14). This is the conference's own public-facing aggregate.</p></li>
+<li><p>Business Track: eight voices, meaning one keynote, seven practitioner talks of 25 minutes each, and a closing conversation.</p></li>
+<li><p>Party: Thursday evening at Muziekgieterij, with a community DJ. Friday evening stayed deliberately empty (L-5022).</p></li>
+</ul>
+</section>
+<section id="what-was-planned-and-what-happened">
+<h2>What was planned and what happened<a class="headerlink" href="#what-was-planned-and-what-happened" title="Link to this heading">#</a></h2>
+<p>The team planned in a public issue tracker with a project board.
+A retrospective analysis on 2026-11-02, five weeks after the conference, found 110 issues, 58 closed and 52 open (S099).
+The board held only 30 items, so about 80 issues never reached it, and no milestones were used.
+The board was therefore never the operational truth it was meant to be (L-5031).
+The analysis drew four lessons.
+Each rests on a cluster of issues.</p>
+<section id="l1-nobody-maintains-the-tracker-in-the-last-six-weeks">
+<h3>L1: nobody maintains the tracker in the last six weeks<a class="headerlink" href="#l1-nobody-maintains-the-tracker-in-the-last-six-weeks" title="Link to this heading">#</a></h3>
+<p>Cluster A holds work that demonstrably happened but stayed open, among them the party, the goodie bag, the sprint organization and session recording.
+Open state could not tell unfinished work from missing closure (L-5033).
+The recommended fix is closing as you go and a weekly triage through the final phase (L-5032).</p>
+</section>
+<section id="l2-the-drops-cluster-in-four-places">
+<h3>L2: the drops cluster in four places<a class="headerlink" href="#l2-the-drops-cluster-in-four-places" title="Link to this heading">#</a></h3>
+<p>Cluster B holds work that was genuinely dropped: legal and insurance, accessibility, local audience development and research beyond team capacity.
+The venue-insurance due diligence was never completed (L-5034).
+The venue-accessibility task was dropped and no accessibility information reached the website (L-5035).
+University outreach was never executed (L-5036).
+A decision-maker research program reached written scripts and stopped there (L-5037).
+The fix is to track required checks as completion gates and to give optional work an owner and a drop-by date (L-5038).
+The team's own documentation tooling ambition never started, and a folder of Markdown files became the archive instead (L-5039, L-5040).</p>
+</section>
+<section id="l3-one-level-of-hierarchy-too-many">
+<h3>L3: one level of hierarchy too many<a class="headerlink" href="#l3-one-level-of-hierarchy-too-many" title="Link to this heading">#</a></h3>
+<p>The team created an epic layer and abandoned it, while real work continued in small focused issues (L-5041).
+For a small team, a flat list with clear titles and regular triage is the cheaper default (L-5042).</p>
+</section>
+<section id="l4-reuse-tooling-visibility-and-external-dependencies">
+<h3>L4: reuse, tooling visibility and external dependencies<a class="headerlink" href="#l4-reuse-tooling-visibility-and-external-dependencies" title="Link to this heading">#</a></h3>
+<p>The shared budget and sponsor-invoicing issues closed on 2026-09-10, eleven days before the conference, but that is tracker hygiene, not a work date: budgeting and accounting were in place earlier, and the closure dates misled the first pass of this review (L-5043, corrected 2026-11-02).
+Budgeting and accounting belong at the start of ticket sales (L-5044).
+Reuse of the conference website tooling, and of content that recurs every edition, can be increased; dependency on external deployments was a factor in delays (L-5069).
+The last-phase plan did set program, numbers and print-and-order freezes on 2026-09-04, 2026-09-07 and 2026-09-11, and they worked as a model (L-5047, S100).</p>
+<p>Beyond the four lessons, the organizer's retrospective adds the framing that ties the drops together.
+Started initiatives such as university outreach, decision-maker research and contact to local industry drowned in a large number of surprises that a manual like this handbook could have prevented, and the improvisation the surprises forced made planning obsolete (L-5073).
+Many participants and sponsors decided on their attendance only weeks or days before the conference, a major source of planning risk that also gated the production of material (L-5070).
+And knowing whether the budget held gated a chain of decisions, from cross-financing global south tickets to extra equipment and keynote speakers (L-5071).</p>
+</section>
+</section>
+<section id="the-fifteen-debrief-facts">
+<h2>The fifteen debrief facts<a class="headerlink" href="#the-fifteen-debrief-facts" title="Link to this heading">#</a></h2>
+<p>The organizers' debrief of 2026-11-02 produced fifteen facts (S098).
+Each is summarized with its confidence as the ledger records it.</p>
+<p><strong>F1, cross-border VAT.</strong>
+Organizing in the Netherlands from a company in another tax jurisdiction made VAT a top-level challenge, and buyer refund questions needed public instructions during the campaign.
+The consequences of organizing in another country were underestimated, and unexpected tax issues cost a lot of time (L-5074).
+The exact place-of-supply and refund rules are not verified here.
+Confidence: observed. Ledger: L-5000, L-5001, L-5074.</p>
+<p><strong>F2, who sells the ticket.</strong>
+The selling entity changes the price a participant who cannot reclaim VAT pays.
+The debrief reported that a university organizer sometimes charges no VAT, and that Foundation-sold tickets carry no EU VAT.
+<strong>Pending verification:</strong> the university claim and current Foundation practice, tracked as requirements-register candidates R35 and R36 (S106).
+Confidence: reported. Ledger: L-5002.</p>
+<p><strong>F3, Global South tickets.</strong>
+Maastricht introduced Global South pricing and pursued dedicated grant support, as two separate tasks.
+Confidence: observed. Ledger: L-5003, L-5004.</p>
+<p><strong>F4, reusable grant argumentation.</strong>
+The application for ticket-access funding is reusable once its economics are replaced with synthetic ones.
+It explained the subsidy per place and described eligibility and independent review (S109).
+The final plan records that it was abandoned after no response (S100).
+Confidence: observed. Ledger: L-5005, L-5067, L-5068.</p>
+<p><strong>F5, funding can go wrong.</strong>
+A community grant request stayed open with no recorded response.
+Unconfirmed grants stay out of committed income.
+Confidence: observed for the principle, reported for the case. Ledger: L-5006, L-5007.</p>
+<p><strong>F6, late purchases.</strong>
+The community buys late, which strains cash flow and organizer nerves.
+A dated forecast separates normal late buying from a shortfall.
+Confidence: observed. Ledger: L-5008, L-5009.</p>
+<p><strong>F7, honest community size.</strong>
+The debrief described the recurring in-person community as roughly a hundred people and possibly shrinking.
+It attributed extra audiences at earlier editions to a joint event and reduced-price local tickets.
+<strong>Pending verification:</strong> both statements need comparable per-edition data.
+Planned university outreach in 2026 was never executed (L-5036).
+Confidence: observed for the planning principle, hearsay for the figures. Ledger: L-5010, L-5011, L-5012.</p>
+<p><strong>F8, reusable accounting.</strong>
+A plain-text budget with periodic transactions, a shadow double-entry ledger and import rules worked, and was reconciled to actuals (S104, S105).
+It kept manual boundaries for bank entry and refunds, and a committed-spend overlay whose assumptions need testing.
+It needs a sanitized rewrite before reuse.
+Confidence: observed. Ledger: L-5013, L-5014, L-5015, L-5060, L-5061, L-5062, L-5063.</p>
+<p><strong>F9, the platform fee.</strong>
+The ticket platform's fee is a real line item.
+Verified by the organizer on 2026-11-02: the conference paid 2.89 EUR per ticket that was paid via Stripe.
+A self-hosted alternative with invoice payment was proposed, not evaluated.
+Confidence: observed. Ledger: L-5016, L-5017, L-5018.</p>
+<p><strong>F10, expectations never written down.</strong>
+Trainer accommodation paid by the conference was an implicit expectation and the debrief's largest financial risk.
+Trainer compensation was unregulated.
+Nobody is entitled to a party, yet the community values one.
+Speaker discounts belong in the pricing model from day one, because speakers form a large minority of participants.
+Verified on 2026-11-02 against the conference website: 56 listed presenters against 117 tickets, about 48 percent (L-5075).
+Confidence: observed. Ledger: L-5019, L-5020, L-5021, L-5022, L-5023, L-5024, L-5075.</p>
+<p><strong>F11, recording is real work.</strong>
+Recording needs its own workstream and owner.
+Recordings were made while the related issues stayed open.
+Recording equipment was purchased for the conference and is likely not being reused afterwards (L-5072).
+Confidence: observed. Ledger: L-5025, L-5049, L-5072.</p>
+<p><strong>F12, the annual meeting slot.</strong>
+The debrief said the Foundation's annual meeting needs more than a 25-minute slot and should be streamed.
+The organizer confirmed this for the 2026 edition on 2026-11-02; the general rule still awaits Foundation confirmation as register row R-034 (L-5076).
+Confidence: observed for 2026. Ledger: L-5026, L-5076.</p>
+<p><strong>F13, PeerTube and the streaming tradeoff.</strong>
+PeerTube worked well for live access by people outside the venue.
+Streaming might keep some people from attending in person, which is a possibility without measured effect.
+Confidence: observed for the tooling, hearsay for the tradeoff. Ledger: L-5027, L-5028.</p>
+<p><strong>F14, ticket prediction.</strong>
+Ticket-purchase prediction research should be preserved as a rerunnable method with synthetic inputs.
+The implementation separates daytime attendance from other categories and needs its edition-specific configuration replaced (S108).
+Confidence: observed. Ledger: L-5029, L-5030, L-5066.</p>
+<p><strong>F15, issues and a board as method.</strong>
+The method is worth keeping with three preconditions: close-as-you-go hygiene, one board holding all work, and required checks as gates.
+Confidence: observed for the board, reported for the analysis. Ledger: L-5031, L-5032, L-5038.</p>
+</section>
+<section id="the-attendee-survey">
+<h2>The attendee survey<a class="headerlink" href="#the-attendee-survey" title="Link to this heading">#</a></h2>
+<p>The team surveyed attendees after the conference with a web form whose submissions arrived as individual emails, then extracted and counted them with scripts (L-6001, L-6003).
+About one in five ticket holders answered, 21 people over about three weeks (L-6002).
+The respondents skewed toward insiders already active in the community, so the results are the voice of the engaged community, not of the audiences the conference tried to reach (L-6007).</p>
+<p>The overall rating averaged 4.57 of 5, with fifteen top marks among 21 (L-6015).
+Catering was the strongest area at 4.81, and organizing and logistics followed at 4.62 (L-6016, L-6018).
+Trainings averaged 4.31 but held the only 1 in the dataset: one attendee expected hands-on work and learned nothing (L-6020, L-6021).
+The analysis answered with a quality floor in the trainer agreement — hands-on exercises, stated prerequisites and stated outcomes (L-6022).</p>
+<p>The Business Track averaged 4.12 on eight ratings, and every attendee who answered wants it back, most of them shorter (L-6024).
+Its survey-visible audience was mostly providers who came for the conference anyway, so the track showed provider confidence rather than market access.
+The analysis recommends keeping and shortening it and judging the 2027 edition by registrations from outside the community (L-6025, L-6026).</p>
+<p>The venue bet worked: the hotel that held sessions, rooms and catering was the strongest free-text theme (L-6029).
+Its cost was social, because the venue sat far from the town center and from where most people slept (L-6031, L-6032).
+Party and socializing tied for the lowest rating at 4.11 (L-6028).
+Engineered evenings — organized dinners on training and sprint days, a suggested area and a restaurant list — are the cheapest large gain the analysis found, and they echo Seattle 2006 (L-6033, L-6034, L-6035).</p>
+<p>Value for money averaged 4.30 with four unexplained 3s, and the analyst's first reading of it was contradicted by the data, so price perception stays a blind spot (L-6036, L-6037).
+Asked about Bucharest in 2027, 16 said yes, 2 perhaps and 3 probably not, and the three probably-nots were the respondents who skipped the profile questions (L-6041, L-6042).</p>
+<p>The form itself needs a redesign before the next edition.
+Its free-text fields were too small, it had no open comment field, its skip logic hid the audience profile from half the sample, and it asked neither about price nor about what nearly stopped people from coming (L-6008, L-6009, L-6010, L-6011, L-6012).
+It reached attendees only; a short version for community members who did not come would hear the people the conference failed to reach (L-6013, L-6014).
+Confidence: observed for ratings and counts, reported for free text and the analyst's reading.</p>
+</section>
+<section id="verdict-lists">
+<h2>Verdict lists<a class="headerlink" href="#verdict-lists" title="Link to this heading">#</a></h2>
+<p>These lists follow the Seattle 2006 pattern.
+They are built from the rows.
+A row's general scope records the source's claim and does not pass the promotion rule.</p>
+<section id="good-things-to-do-again">
+<h3>Good things to do again<a class="headerlink" href="#good-things-to-do-again" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Write day-in-the-life narratives for each role and review them next to adjacent roles (L-5050, S101).</p></li>
+<li><p>Separate the responsible manager from helpers, rotate helper shifts, and confirm each assignment the evening before (L-5051, L-5052, L-5053).</p></li>
+<li><p>Assign the smaller mandates, such as venue liaison and on-site money, as well as the major roles (L-5055).</p></li>
+<li><p>Use separate program, headcount and print-and-order freezes (L-5047).</p></li>
+<li><p>Hold a short daily operations meeting and an end-of-day readiness check (L-5048).</p></li>
+<li><p>Rehearse recording with the real hardware before setup day (L-5049).</p></li>
+<li><p>Keep a plain-text budget aligned to actuals with import rules (L-5013, L-5014, L-5060).</p></li>
+<li><p>Run permission-first outreach from one authoritative dataset, and treat introductions, forwarding and audience access as separate permissions (L-5056, L-5057, L-5058, L-5059, S102, S103).</p></li>
+<li><p>Keep email source, generated HTML and plain-text fallback together, and preview with a credential-free dry run (L-5064, L-5065, S107).</p></li>
+<li><p>Fund a reduced-price Global South route (L-5003, L-5004).</p></li>
+<li><p>Offer live streaming through PeerTube for remote viewers (L-5027).</p></li>
+<li><p>Keep sessions, rooms and catering under one roof; catering was the best-rated area of the survey (L-6016, L-6029).</p></li>
+<li><p>Make the survey numbers reproducible by script, and review the reading adversarially before publishing (L-6003, L-6005).</p></li>
+</ul>
+</section>
+<section id="things-we-did-not-do-that-you-probably-should-not-either">
+<h3>Things we did not do that you probably should not either<a class="headerlink" href="#things-we-did-not-do-that-you-probably-should-not-either" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Skip the venue-insurance due diligence (L-5034).</p></li>
+<li><p>Skip venue and website accessibility information (L-5035).</p></li>
+<li><p>Leave website quality assurance to the last day (L-5045, L-5046).</p></li>
+<li><p>Leave completed work open on the tracker (L-5033).</p></li>
+<li><p>Plan local outreach or audience research and let it lapse without a decision (L-5036, L-5037).</p></li>
+<li><p>Settle the VAT regime during ticket sales instead of before them (L-5000, L-5001, L-5074).</p></li>
+<li><p>Aim documentation tooling beyond the team's daily habits (L-5039, L-5040).</p></li>
+</ul>
+</section>
+<section id="things-we-might-do-differently-next-time">
+<h3>Things we might do differently next time<a class="headerlink" href="#things-we-might-do-differently-next-time" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Write expectations down at the start of planning, including trainer accommodation and compensation, and settle accommodation before confirming trainings (L-5019, L-5020, L-5021).</p></li>
+<li><p>Model speaker discounts from day one (L-5023).</p></li>
+<li><p>Compare ticket platforms on net revenue, and consider the self-hosted option explicitly (L-5016, L-5018).</p></li>
+<li><p>Set attendance goals with separate estimates for the core community and local audiences (L-5010).</p></li>
+<li><p>Judge low-sales alarms against a late-buying forecast (L-5008, L-5009).</p></li>
+<li><p>Use a flat task list and keep every item on one board (L-5031, L-5042, L-5041).</p></li>
+<li><p>Check the combined workload of the person owning daytime operations and a late social event (L-5054).</p></li>
+<li><p>Test the assumptions of the committed-spend overlay before relying on it (L-5062).</p></li>
+<li><p>Confirm the annual meeting's length and streaming through the Foundation before freezing the schedule (L-5026).</p></li>
+<li><p>Decide the streaming tradeoff explicitly for each edition (L-5028).</p></li>
+<li><p>Publish the grant argument and the prediction method as sanitized templates (L-5005, L-5067, L-5068, L-5029, L-5066).</p></li>
+<li><p>Write a quality floor into each trainer agreement: hands-on exercises, stated prerequisites and stated outcomes (L-6021, L-6022).</p></li>
+<li><p>Treat evening programming as an organized deliverable, and pick a venue reachable from where people sleep (L-6033, L-6034).</p></li>
+<li><p>Keep the Business Track, shorten it and judge it by registrations from outside the community (L-6026).</p></li>
+<li><p>Ask about price perception and attendance barriers directly, and survey community members who did not attend (L-6011, L-6012, L-6014, L-6037).</p></li>
+<li><p>Reach out personally to the known participants and ask them for a commitment to come or not come, even when they will only buy late (L-5070).</p></li>
+</ul>
+</section>
+</section>
+<section id="numbers">
+<h2>Numbers<a class="headerlink" href="#numbers" title="Link to this heading">#</a></h2>
+<p>These figures are aggregates and carry no personal or financial raw data.</p>
+<ul class="simple">
+<li><p>Tickets: 117, of which 5 party-only (S098, F14).</p></li>
+<li><p>Recurring in-person community: roughly a hundred people, possibly shrinking, as an approximate planning hypothesis (L-5011, hearsay, pending verification).</p></li>
+<li><p>Speakers: 56 presenters listed on the conference website against 117 tickets, about 48 percent (L-5075, as of 2026-11-02).</p></li>
+<li><p>Platform fee: 2.89 EUR per ticket paid via Stripe (L-5017, verified 2026-11-02).</p></li>
+<li><p>Business Track: eight voices, seven practitioner talks of 25 minutes.</p></li>
+<li><p>Attendee survey: 21 responses, about one in five ticket holders, overall rating 4.57 of 5 (L-6002, L-6015).</p></li>
+<li><p>Tracker: 110 issues, 58 closed and 52 open at 2026-11-02, with 30 items on the board (S099).</p></li>
+</ul>
+</section>
+<section id="what-this-record-feeds">
+<h2>What this record feeds<a class="headerlink" href="#what-this-record-feeds" title="Link to this heading">#</a></h2>
+<p>The handover contract names six deliverables due at T+60 days (proposed, see <a class="reference internal" href="../../running/governance.html"><span class="std std-doc">Governance</span></a>).
+Status as of 2026-11-02:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Deliverable</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Post-mortem</p></td>
+<td><p>Pending. This document is the draft and awaits team sign-off (D9).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Financial summary, generalized</p></td>
+<td><p>Pending. The accounting method is recorded (L-5014), and no generalized result summary is filed.</p></td>
+</tr>
+<tr class="row-even"><td><p>Anonymized survey data, aggregates only</p></td>
+<td><p>Done. The anonymized analysis is filed as S110 and held back from the public bibliography, because quoted free text can re-identify respondents; the raw submissions stay private (L-6004).</p></td>
+</tr>
+<tr class="row-odd"><td><p>The &quot;expected but never written down&quot; list</p></td>
+<td><p>Pending. F10 supplies the seed (L-5019 to L-5024), and the full list is not complete.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Two deliverables of the handover contract will not be produced for 2026 and were removed from the table on the organizer's decision of 2026-11-02: the asset and credential handover, and the vendor contacts.
+The handbook keeps both in the handover contract for future editions.</p>
+<div class="hb-thin hb-thin-single-source warning admonition" id="conference-2026-maastricht-thin-1-the-2026-post-mortem-awaits-team-sign-off">
+<p class="admonition-title">The 2026 post-mortem awaits team sign-off</p>
+<p>thin | kind: single-source | needs: The 2026 organizing team's sign-off on this case file, plus the generalized financial summary and the full &quot;expected but never written down&quot; list | who-might-know: The 2026 organizing team; Conference Committee | area: post-mortem-2026 | since: 2026-11-02</p>
+<p>This record rests on one organizers' debrief and the attendee survey, and the team has not yet confirmed its voice and facts (D9).</p>
+</div>
+<p>The ledger rows above are placed in the chapters on finance, ticketing, accessibility, team and governance and others.
+Those chapters are the durable home of the lessons, and this page is the case file they cite.</p>
+</section>
+<section id="sources-and-further-reading">
+<h2>Sources and further reading<a class="headerlink" href="#sources-and-further-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>S098 Plone Conference 2026 facts and lessons for the handbook (organizers' debrief).</p></li>
+<li><p>S099 GitHub issues and project board collaboration review.</p></li>
+<li><p>S100 Last-phase plan.</p></li>
+<li><p>S101 On-site roles.</p></li>
+<li><p>S102 Making contact: operator cheat sheet.</p></li>
+<li><p>S103 Euregio contact kit.</p></li>
+<li><p>S104 Conference accounting overview.</p></li>
+<li><p>S105 Conference accounting operator runbook.</p></li>
+<li><p>S106 Foundation requirements register.</p></li>
+<li><p>S107 Email campaigns.</p></li>
+<li><p>S108 Attendance forecast implementation.</p></li>
+<li><p>S109 Global South grant application discussion.</p></li>
+<li><p>S110 Maastricht 2026 attendee survey analysis (held back, not linked).</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../appendices/glossary.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Glossary</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../generated/lesson-index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lesson index</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-this-document">Purpose of this document</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-was-planned-and-what-happened">What was planned and what happened</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l1-nobody-maintains-the-tracker-in-the-last-six-weeks">L1: nobody maintains the tracker in the last six weeks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-the-drops-cluster-in-four-places">L2: the drops cluster in four places</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l3-one-level-of-hierarchy-too-many">L3: one level of hierarchy too many</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l4-reuse-tooling-visibility-and-external-dependencies">L4: reuse, tooling visibility and external dependencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fifteen-debrief-facts">The fifteen debrief facts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-attendee-survey">The attendee survey</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verdict-lists">Verdict lists</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#good-things-to-do-again">Good things to do again</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-we-did-not-do-that-you-probably-should-not-either">Things we did not do that you probably should not either</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-we-might-do-differently-next-time">Things we might do differently next time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numbers">Numbers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-record-feeds">What this record feeds</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources-and-further-reading">Sources and further reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Plone community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Plone community, CC BY 4.0.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>The text and illustrations in this handbook are licensed under a Creative Commons Attribution 4.0 International license. Plone and the Plone® logo are registered trademarks of the Plone Foundation. For guidelines on the permitted uses of the Plone trademarks, see <a href="https://plone.org/foundation/logo">https://plone.org/foundation/logo</a>.</p>
+</div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

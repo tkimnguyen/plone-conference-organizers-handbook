@@ -1,0 +1,1001 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="A generic plain-text accounting setup with hledger: living budget, shadow ledger, import rules, committed-spend overlay, canned reports and smoke tests." lang="en" name="description" xml:lang="en" />
+<meta content="Plone, Plone Conference, hledger, accounting, budget, plain-text accounting, template" name="keywords" />
+<meta property="og:title" content="Template: hledger accounting setup" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="appendices/hledger-accounting-setup.html" />
+<meta property="og:site_name" content="Plone Conference Organizers Handbook" />
+<meta property="og:description" content="This page describes a plain-text accounting setup that one conference used and that another team can copy. It serves two needs with one set of files. The first is a living budget, a forecast that c..." />
+<meta property="og:locale" content="en_US" />
+
+    <title>Template: hledger accounting setup &#8212; Plone Conference Organizers Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=0fc419ee" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/plone-sphinx-theme.css?v=03afa5dd" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../_static/hb.css?v=932d0239" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../_static/documentation_options.js?v=b9472d72"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/plone-sphinx-theme.js?v=ce3a8c55"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'appendices/hledger-accounting-setup';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Ticket-purchase prediction model" href="ticket-purchase-prediction-model.html" />
+    <link rel="prev" title="Template: Tailoring Record" href="tailoring-record-template.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.svg" class="logo__image only-light" alt=""/>
+    <img src="../_static/logo.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Plone Conference Organizers Handbook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../start/about.html">About and purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/choose-your-path.html">Choose your path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/context-dimensions.html">Context dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/honesty-statement.html">Honesty statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/how-to-read-lessons.html">How to read lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/license-and-contribute.html">License and contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/problem-history.html">The problem history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/tailor.html">Tailor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/use.html">Use: your first 90 days</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The organizer's job</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../job/bid-and-selection.html">Bid and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/community-and-speaker-expectations.html">Community and speaker expectations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/defining-success.html">Defining success</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/handover-contract.html">Handover contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/legal-entity-and-financial-agent.html">Legal entity and financial agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/master-timeline.html">Master timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/stakeholder-map.html">Stakeholder map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../job/team-and-governance.html">Team and governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workstreams</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/index.html">Workstreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/formats-and-values/hybrid-online.html">Hybrid and online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/formats-and-values/sustainability.html">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/marketing/marketing-and-outreach.html">Marketing and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/marketing/web-comms-brand.html">Web, comms and brand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/money-and-law/contracts-legal-insurance.html">Contracts, legal and insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/money-and-law/finance.html">Finance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/money-and-law/privacy-gdpr.html">Privacy and GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/money-and-law/sponsors.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/money-and-law/ticketing-and-registration.html">Ticketing and registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/on-site-production/av-recording-internet.html">AV, recording and internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/on-site-production/print-and-merch.html">Print and merch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/on-site-production/signage-and-showtime.html">Signage and showtime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/people/accessibility-and-inclusion.html">Accessibility and inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/people/code-of-conduct-operations.html">Code of Conduct operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/people/health-safety-emergencies.html">Health, safety and emergencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/people/visas-and-travel.html">Visas and travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/people/volunteers-and-roles.html">Volunteers and roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/business-and-side-tracks.html">Business and side tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/cfp-and-selection.html">CFP and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/keynotes-and-invited-talks.html">Keynotes and invited talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/programme-portfolio.html">Programme portfolio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/speakers-and-speaker-care.html">Speakers and speaker care</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/programme/trainings.html">Trainings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/social/social-events-and-party.html">Social events and party</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/venue-and-logistics/catering.html">Catering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/venue-and-logistics/city-selection.html">City selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/venue-and-logistics/hotels-and-local-logistics.html">Hotels and local logistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workstreams/venue-and-logistics/venue.html">Venue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Risk and incidents</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../risk/risk-method.html">The risk register method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/cross-cutting-risks.html">Cross-cutting risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/cash-flow-crunch.html">Playbook: cash-flow crunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/coc-incident.html">Playbook: Code of Conduct incident</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/force-majeure.html">Playbook: force majeure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/key-person-loss.html">Playbook: key-person loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/low-ticket-sales.html">Playbook: low ticket sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/speaker-dropout.html">Playbook: speaker dropout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/venue-loss.html">Playbook: venue loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../risk/playbooks/wifi-failure.html">Playbook: Wi-Fi failure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Running the handbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../running/annual-ritual.html">The annual ritual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/extend.html">Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/lesson-authoring-rules.html">Lesson authoring rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/thin-registry-about.html">About the thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../running/update.html">Update</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Evidence and archive</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../evidence/conference-index.html">Conference index</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evidence/source-bibliography.html">Source bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../evidence/lessons-ledger.html">Lessons ledger</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../evidence/lessons-ledger.html">Lessons ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../evidence/requirements-register.html">Foundation requirements register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../evidence/source-bibliography.html">Source bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../annexes/jurisdictions/br.html">Annex: Brazil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../annexes/jurisdictions/de.html">Annex: Germany</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../annexes/jurisdictions/nl.html">Annex: Netherlands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../annexes/jurisdictions/us.html">Annex: United States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../annexes/variants/small-budget.html">Annex: small-budget variant</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="survey-template.html">Template: attendee survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="post-mortem-template.html">Template: post-mortem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cfp-template.html">Template: call for proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsor-prospectus-template.html">Template: sponsor prospectus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="budget-sheet-template.html">Template: budget sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="role-descriptions-template.html">Template: role descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tailoring-record-template.html">Template: Tailoring Record</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Template: hledger accounting setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ticket-purchase-prediction-model.html">Ticket-purchase prediction model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="global-south-grant-argumentation.html">Global south grant argumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="t-minus-checklist.html">T-minus checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seattle-2006-digest.html">Annotated Seattle 2006 digest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conference records</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../conferences/2026-maastricht/conference-2026-maastricht.html">Plone Conference 2026, Maastricht: case file</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Generated registers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../generated/lesson-index.html">Lesson index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generated/risk-register.html">Risk register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generated/thin-registry.html">Thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generated/decision-register.html">Decision register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generated/coverage-map.html">Coverage map</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook/issues/new?title=Issue%20on%20page%20%2Fappendices/hledger-accounting-setup.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/appendices/hledger-accounting-setup.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Template: hledger accounting setup</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-to-use-it">When to use it</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#layout">Layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-declare-the-chart-of-accounts">Step 1, declare the chart of accounts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-write-the-living-budget">Step 2, write the living budget</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-import-the-sales-exports">Step 3, import the sales exports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-keep-the-manual-boundary-explicit">Step 4, keep the manual boundary explicit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-add-a-committed-spend-overlay-if-you-need-one">Step 5, add a committed-spend overlay if you need one</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-add-the-four-canned-reports">Step 6, add the four canned reports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-run-the-weekly-import-cycle">Step 7, run the weekly import cycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-sync-two-workstations-through-git">Step 8, sync two workstations through git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-write-smoke-tests">Step 9, write smoke tests</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapt-it-to-your-conference">Adapt it to your conference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applies-when">Applies when</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-content">Thin content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="template-hledger-accounting-setup">
+<h1>Template: hledger accounting setup<a class="headerlink" href="#template-hledger-accounting-setup" title="Link to this heading">#</a></h1>
+<p>This page describes a plain-text accounting setup that one conference used and that another team can copy.
+It serves two needs with one set of files.
+The first is a living budget, a forecast that converges on actuals as the event unwinds.
+The second is a shadow double-entry ledger, a record of income and cost that does not depend on the books of whoever signs the contracts, and that produces the figures an accountant needs.</p>
+<p>The pattern is general: a plain-text journal, a budget file, import rules for the sales exports, a few canned reports and a smoke test.
+The 2026 implementation was specific to one ticket platform, one payment provider, one bank and one VAT regime (S104, S105, L-5014).
+Every journal fragment below is synthetic and every figure is a round placeholder.
+The decisions about which entity books what, and about VAT, belong in <a class="reference internal" href="../workstreams/money-and-law/finance.html"><span class="std std-doc">Finance</span></a> and <a class="reference internal" href="../job/legal-entity-and-financial-agent.html"><span class="std std-doc">Legal entity and financial agent</span></a>, before you set anything up.</p>
+<section id="when-to-use-it">
+<h2>When to use it<a class="headerlink" href="#when-to-use-it" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>You want a budget-to-actual view from the day ticket sales begin, not a spreadsheet rebuilt from memory at the end. Tooling kept from the start keeps every earlier commitment visible (L-5044).</p></li>
+<li><p>A financial agent, a company or a university keeps the official books, and the team needs its own factual record next to them.</p></li>
+<li><p>Someone on the team is comfortable with a command line and git. Nobody else needs to be.</p></li>
+</ul>
+<p>If you only need a budget, start with the budget sheet template and skip this page.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hledger</span></code> version 1.30 or later. The 2026 setup was tested with 1.50 (S104). The fragments on this page were checked with 1.52.</p></li>
+<li><p>A POSIX shell and <code class="docutils literal notranslate"><span class="pre">awk</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span></code>, so two workstations stay in sync.</p></li>
+</ul>
+</section>
+<section id="layout">
+<h2>Layout<a class="headerlink" href="#layout" title="Link to this heading">#</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>main.journal        top-level file, includes the four below
+accounts.journal    decimal mark, commodity, chart of accounts
+imported.journal    generated by hledger import, never edited by hand
+manual.journal      hand-entered transactions
+budget.journal      periodic-transaction budget
+
+rules/              CSV rules files, preprocessing scripts, import state files
+bin/                the four canned reports
+tests/run-tests.sh  smoke tests
+source-data/        exports, invoice PDFs and receipts (keep private)
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">main.journal</span></code> holds only include lines:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>include accounts.journal
+include imported.journal
+include manual.journal
+include budget.journal
+</pre></div>
+</div>
+</section>
+<section id="step-1-declare-the-chart-of-accounts">
+<h2>Step 1, declare the chart of accounts<a class="headerlink" href="#step-1-declare-the-chart-of-accounts" title="Link to this heading">#</a></h2>
+<p>Declare every account.
+<code class="docutils literal notranslate"><span class="pre">hledger</span> <span class="pre">check</span> <span class="pre">accounts</span></code> then catches a typo before it becomes a second, silent account.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>decimal-mark .
+commodity 1000.00 EUR
+
+account assets:bank:conference
+account assets:bank:payment-provider
+account assets:receivable
+account assets:prepaid:venue
+account assets:prepaid:vat
+account liabilities:vat:output
+account equity:conference-current
+account equity:reserved:contracted
+account revenue:tickets
+account revenue:sponsors
+account expenses:venue
+account expenses:catering
+account expenses:av
+account expenses:print
+account expenses:fees:ticketing
+account expenses:fees:payment
+</pre></div>
+</div>
+<p>Keep the top level small: assets, liabilities, equity, revenue, expenses.
+Add one level per workstream under expenses, so the budget lines and the cost lines match.</p>
+</section>
+<section id="step-2-write-the-living-budget">
+<h2>Step 2, write the living budget<a class="headerlink" href="#step-2-write-the-living-budget" title="Link to this heading">#</a></h2>
+<p>The budget is a set of periodic transactions.
+Virtual postings, written in parentheses, let each budget line stand alone without a balancing entry.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>; Ticket income, spread evenly until the target date.
+~ monthly from 2027-02-01 to 2027-09-01  ; phase:sales
+    (revenue:tickets)        EUR -1000.00
+
+; Venue deposit, one lump in a single month.
+~ monthly from 2027-04-01 to 2027-05-01  ; phase:deposit
+    (expenses:venue)         EUR 500.00
+</pre></div>
+</div>
+<p>Compare budget and actuals with the budget report:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>hledger -f main.journal balance --budget -E revenue expenses -p 2027-04..2027-06
+</pre></div>
+</div>
+<p>The report shows each account's actual amount and the percentage of its goal.
+Update the budget file whenever a decision changes a line.
+The budget is a living forecast, so the history of changes belongs in git, not in file copies.</p>
+</section>
+<section id="step-3-import-the-sales-exports">
+<h2>Step 3, import the sales exports<a class="headerlink" href="#step-3-import-the-sales-exports" title="Link to this heading">#</a></h2>
+<p>Each export becomes one rules file.
+A rules file maps the columns of the CSV to postings.
+The example turns a ticket order into a sale that splits gross, net and VAT.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># rules/ticketing-orders.csv.rules
+source ../source-data/orders/orders-*.csv
+skip 1
+fields date, code, ticket, gross, vat, net
+date-format %Y-%m-%d
+currency EUR
+description Ticket order, %ticket
+account1 assets:receivable
+amount1 %gross
+account2 revenue:tickets
+amount2 -%net
+account3 liabilities:vat:output
+amount3 -%vat
+</pre></div>
+</div>
+<p>Run the import:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>hledger import -f imported.journal rules/ticketing-orders.csv.rules
+</pre></div>
+</div>
+<p>The command reports how many transactions it imported, or that it found nothing to import.
+It is idempotent.
+Platform exports are usually cumulative: each one contains every row since the campaign started.
+hledger deduplicates through a state file next to the rules file, named <code class="docutils literal notranslate"><span class="pre">.latest.&lt;rules</span> <span class="pre">file</span> <span class="pre">name&gt;</span></code>.
+Commit that state file, so both workstations agree on what has been imported (L-5060).</p>
+<p>Two practical points follow from the 2026 experience.</p>
+<ul class="simple">
+<li><p>Arithmetic that hledger rules cannot do, such as computing net from gross, goes into a small preprocessing script that writes a derived CSV. Keep the original export untouched.</p></li>
+<li><p>An export with a different decimal mark needs a normalizing script before the rules read it. If the amounts land about one hundred times too large or too small, check that script first.</p></li>
+</ul>
+<p>Give every generated transaction a code that points back to the source row, such as an invoice number or a payout identifier.
+The audit trail then reads <code class="docutils literal notranslate"><span class="pre">hledger</span> <span class="pre">-f</span> <span class="pre">main.journal</span> <span class="pre">register</span> <span class="pre">code:INV-0001</span></code>.</p>
+</section>
+<section id="step-4-keep-the-manual-boundary-explicit">
+<h2>Step 4, keep the manual boundary explicit<a class="headerlink" href="#step-4-keep-the-manual-boundary-explicit" title="Link to this heading">#</a></h2>
+<p>Not everything is imported.
+The 2026 runbook automated the ticket platform and payment provider imports, and kept bank entry assisted and refunds manual (L-5063).
+Write down your own boundary the same way.
+A typical split:</p>
+<ul class="simple">
+<li><p>Imported: ticket orders and payment provider payouts.</p></li>
+<li><p>Assisted: bank lines. Someone exports them, removes the lines that do not belong to the conference, and reviews each booking.</p></li>
+<li><p>Manual: invoiced sponsors, supplier invoices, costs paid by someone else, grant receipts, refunds, contract signings and VAT clearance.</p></li>
+</ul>
+<p>A manual invoice and its payment look like this.
+The 21 percent rate is an illustration as of 2026-09 and carries no advice.
+Use the rules of your own jurisdiction.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>2027-04-10 (SP-0001) Sponsor invoice, Example Sponsor A
+    assets:receivable          EUR 2420.00
+    revenue:sponsors           EUR -2000.00
+    liabilities:vat:output     EUR -420.00
+
+2027-04-25 Payment for SP-0001
+    assets:bank:conference     EUR 2420.00
+    assets:receivable          EUR -2420.00
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">hledger</span> <span class="pre">balance</span> <span class="pre">assets:receivable</span></code> then lists what has been invoiced and not paid.</p>
+</section>
+<section id="step-5-add-a-committed-spend-overlay-if-you-need-one">
+<h2>Step 5, add a committed-spend overlay if you need one<a class="headerlink" href="#step-5-add-a-committed-spend-overlay-if-you-need-one" title="Link to this heading">#</a></h2>
+<p>A strict profit and loss statement looks healthier than the conference is, because a signed venue contract does not appear as a cost until the invoice arrives.
+The overlay fixes the view without changing the books.</p>
+<p>Record the signing against a reserve, net of VAT.
+Record a prepayment as a prepaid asset plus a prepaid VAT asset, and unwind the reserve by the net part.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>2027-03-01 Venue contract signed, net of VAT
+    equity:conference-current      EUR 5000.00
+    equity:reserved:contracted     EUR -5000.00
+
+2027-04-01 Venue prepayment
+    assets:prepaid:venue           EUR 1000.00
+    assets:prepaid:vat             EUR 210.00
+    assets:bank:conference         EUR -1210.00
+    equity:reserved:contracted     EUR 1000.00
+    equity:conference-current      EUR -1000.00
+</pre></div>
+</div>
+<p>The reports then relabel the prepaid asset and the open commitment as committed expenses, with hledger aliases.
+The journals stay as they are.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>hledger -f main.journal incomestatement \
+  --alias '/^assets:prepaid:venue$/=expenses:committed:venue' \
+  --alias '/^equity:conference-current$/=expenses:committed:contracted'
+</pre></div>
+</div>
+<p>Keep this overlay report-only and separate from statutory balances and VAT reports (L-5061).</p>
+<p>The overlay holds only while <code class="docutils literal notranslate"><span class="pre">equity:conference-current</span></code> exactly mirrors the contracted reserve.
+A cost the parent company pays directly, a VAT clearance or a year-end close can all break that.
+Test the assumption in the smoke test, and retire or redesign the overlay when the test fails (L-5062).</p>
+</section>
+<section id="step-6-add-the-four-canned-reports">
+<h2>Step 6, add the four canned reports<a class="headerlink" href="#step-6-add-the-four-canned-reports" title="Link to this heading">#</a></h2>
+<p>Four small scripts in <code class="docutils literal notranslate"><span class="pre">bin/</span></code> save everyone from remembering options.
+Each passes extra arguments through to hledger.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Script</p></th>
+<th class="head"><p>What it shows</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bin/pnl-budget</span></code></p></td>
+<td><p>Budget against actuals, including committed spend.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bin/pnl</span></code></p></td>
+<td><p>Profit and loss, including committed spend.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bin/balance</span></code></p></td>
+<td><p>The whole-journal balance for the period, strict.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bin/vat</span></code></p></td>
+<td><p>The VAT accounts for the accountant, strict.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A script is two lines:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>#!/bin/sh
+exec hledger -f main.journal balance --budget -E revenue expenses \
+  --alias '/^assets:prepaid:venue$/=expenses:committed:venue' \
+  --alias '/^equity:conference-current$/=expenses:committed:contracted' "$@"
+</pre></div>
+</div>
+<p>For ad-hoc reconciliation, read the register of the bank account against the real bank statement, and the register of the payment provider account against its dashboard.</p>
+</section>
+<section id="step-7-run-the-weekly-import-cycle">
+<h2>Step 7, run the weekly import cycle<a class="headerlink" href="#step-7-run-the-weekly-import-cycle" title="Link to this heading">#</a></h2>
+<p>Once or twice a week, while tickets are on sale:</p>
+<ol class="arabic simple">
+<li><p>Pull the latest git state, so both workstations start from the same files. Done when <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> is clean.</p></li>
+<li><p>Download fresh exports from the ticket platform and the payment provider into <code class="docutils literal notranslate"><span class="pre">source-data/</span></code>. Both are cumulative, so each export replaces the last.</p></li>
+<li><p>Run the import. Done when it reports a count of imported transactions or none.</p></li>
+<li><p>Book the bank lines that arrived since the last cycle. Done when the bank account register matches the bank statement.</p></li>
+<li><p>Verify: run the smoke tests and the budget report. Done when the tests print &quot;ok&quot; and the budget view makes sense.</p></li>
+<li><p>Commit the exports, <code class="docutils literal notranslate"><span class="pre">imported.journal</span></code> and the import state files, with a message that names the date the import runs through, then push.</p></li>
+</ol>
+<p>If the import finds nothing and you know there are fresh rows, delete the state file for that rules file and run it again.
+Stable codes prevent duplicates only if you merge carefully; if in doubt, reset <code class="docutils literal notranslate"><span class="pre">imported.journal</span></code> and import everything.
+If the payment provider balance does not return to zero after all payouts should have cleared, a payout or a sale is missing from one of the exports.
+Download both again and re-import.</p>
+</section>
+<section id="step-8-sync-two-workstations-through-git">
+<h2>Step 8, sync two workstations through git<a class="headerlink" href="#step-8-sync-two-workstations-through-git" title="Link to this heading">#</a></h2>
+<p>Two people can run the cycle on alternate weeks.
+Commit and push at the end of every cycle, and pull at the start of the next.
+Commit the import state files together with the journal they describe.
+Never run an import on two workstations in parallel.</p>
+</section>
+<section id="step-9-write-smoke-tests">
+<h2>Step 9, write smoke tests<a class="headerlink" href="#step-9-write-smoke-tests" title="Link to this heading">#</a></h2>
+<p>A short shell script catches the failures that matter before the accountant does.
+It runs after every import.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+fail() { echo "FAIL: $1" &gt;&amp;2; exit 1; }
+
+hledger -f main.journal check accounts balanced &gt;/dev/null \
+  || fail "journal does not pass checks"
+
+out=$(hledger import --dry-run -f imported.journal rules/ticketing-orders.csv.rules 2&gt;&amp;1 || true)
+echo "$out" | grep -q "no new transactions" || fail "import is not idempotent"
+
+sum=$(hledger -f main.journal balance equity:conference-current equity:reserved:contracted -N -O csv |
+  awk -F'"' 'NR &gt; 1 { sub(/ EUR/, "", $4); s += $4 } END { printf "%.2f", s }')
+[ "$sum" = "0.00" ] || fail "overlay no longer mirrors the contracted reserve ($sum)"
+
+echo "ok"
+</pre></div>
+</div>
+<p>Add a test that compares a known worked example against its expected balances.
+Add a test for every assumption you rely on, so a broken assumption fails loudly.</p>
+</section>
+<section id="adapt-it-to-your-conference">
+<h2>Adapt it to your conference<a class="headerlink" href="#adapt-it-to-your-conference" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Replace the rules files for your ticket platform, payment provider and bank. Expect to write a preprocessing script for each export that is not plain CSV.</p></li>
+<li><p>Replace the VAT accounts with the structure your jurisdiction and your financial agent require. Ask the accountant for the report they want, then build the script for it.</p></li>
+<li><p>Replace the budget lines with the lines from your own budget sheet.</p></li>
+<li><p>Rewrite the design notes as public documentation if you want to share your setup. The 2026 design document was private and could not be republished as it stood.</p></li>
+</ul>
+</section>
+<section id="applies-when">
+<h2>Applies when<a class="headerlink" href="#applies-when" title="Link to this heading">#</a></h2>
+<p>This setup fits a team that has someone comfortable with plain-text tools and a financial agent or accountant who accepts reports built from exports.
+It does not replace the statutory books of the entity that signs the contracts.</p>
+</section>
+<section id="thin-content">
+<h2>Thin content<a class="headerlink" href="#thin-content" title="Link to this heading">#</a></h2>
+<div class="hb-thin hb-thin-gap warning admonition" id="hledger-accounting-setup-thin-1-one-implementation-one-jurisdiction">
+<p class="admonition-title">One implementation, one jurisdiction</p>
+<p>thin | kind: gap | needs: A second team to adapt the setup to another ticket platform, bank and VAT regime, and to report which steps broke | who-might-know: Treasurers of past conferences; accountants who work with plain-text ledgers</p>
+<p>The setup is generalized from one conference.
+The overlay, the VAT report and the bank step are the parts most tied to that conference's entity and country.</p>
+</div>
+</section>
+<section id="sources">
+<h2>Sources<a class="headerlink" href="#sources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>S104 Conference accounting overview, 2026.</p></li>
+<li><p>S105 Conference accounting operator runbook, 2026.</p></li>
+<li><p>L-5014, L-5060, L-5061, L-5062 and L-5063 are the ledger rows behind the pattern. Their full text is in the <a class="reference internal" href="../evidence/lessons-ledger.html"><span class="std std-doc">lessons ledger</span></a>.</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tailoring-record-template.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Template: Tailoring Record</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ticket-purchase-prediction-model.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ticket-purchase prediction model</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-to-use-it">When to use it</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#layout">Layout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-declare-the-chart-of-accounts">Step 1, declare the chart of accounts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-write-the-living-budget">Step 2, write the living budget</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-import-the-sales-exports">Step 3, import the sales exports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-keep-the-manual-boundary-explicit">Step 4, keep the manual boundary explicit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-add-a-committed-spend-overlay-if-you-need-one">Step 5, add a committed-spend overlay if you need one</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-add-the-four-canned-reports">Step 6, add the four canned reports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-run-the-weekly-import-cycle">Step 7, run the weekly import cycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-sync-two-workstations-through-git">Step 8, sync two workstations through git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-write-smoke-tests">Step 9, write smoke tests</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapt-it-to-your-conference">Adapt it to your conference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applies-when">Applies when</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-content">Thin content</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sources">Sources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Plone community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Plone community, CC BY 4.0.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>The text and illustrations in this handbook are licensed under a Creative Commons Attribution 4.0 International license. Plone and the Plone® logo are registered trademarks of the Plone Foundation. For guidelines on the permitted uses of the Plone trademarks, see <a href="https://plone.org/foundation/logo">https://plone.org/foundation/logo</a>.</p>
+</div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.hb-lesson {
+  --hb-accent: var(--pst-color-info, #146a91);
+  border-inline-start: 0.3rem solid var(--hb-accent);
+}
+
+.hb-lesson > .admonition-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.hb-general {
+  --hb-accent: var(--pst-color-primary, #006699);
+  border-inline-start-width: 0.5rem;
+}
+
+.hb-general > .admonition-title { font-weight: 750; }
+.hb-age-recent { border-inline-start-style: solid; }
+.hb-age-mid { border-inline-start-style: dashed; }
+.hb-age-mid > .admonition-title { font-weight: 500; }
+
+.hb-age-old,
+.hb-stale-prone {
+  --hb-accent: var(--pst-color-text-muted, #626b73);
+  border-inline-start-style: dotted;
+  max-block-size: 14rem;
+  overflow: auto;
+  scrollbar-gutter: stable;
+}
+
+.hb-age-old > .admonition-title { font-weight: 400; }
+.hb-stale-prone:hover,
+.hb-stale-prone:focus-within { max-block-size: none; }
+
+.hb-contested {
+  --hb-accent: var(--pst-color-warning, #925900);
+  outline: 1px dashed var(--hb-accent);
+}
+
+.hb-superseded > .admonition-title { text-decoration: line-through; }
+.hb-superseded { border-inline-start-style: double; }
+.hb-superseded > :not(.admonition-title) { color: var(--pst-color-text-muted); }
+
+.hb-thin { border-inline-start: 0.3rem dashed var(--pst-color-warning, #925900); }
+.hb-thin-single-source { border-inline-start-style: dotted; }
+.hb-thin-stale { border-inline-start-style: double; }
+.hb-risk { border-inline-start: 0.3rem solid var(--pst-color-warning, #925900); }
+.hb-impact-high { border-inline-start-color: var(--pst-color-danger, #b32929); }
+.hb-impact-medium { border-inline-start-style: dashed; }
+.hb-impact-low { border-inline-start-style: dotted; }
+.hb-likelihood-high > .admonition-title { font-weight: 750; }
+.hb-likelihood-medium > .admonition-title { font-weight: 600; }
+.hb-likelihood-low > .admonition-title { font-weight: 500; }
+
+.hb-lesson.sd-dropdown > summary.sd-summary-title { overflow-wrap: anywhere; }
+.hb-stale-prone.sd-dropdown[open] { max-block-size: none; }
+
+@media print {
+  .hb-age-old,
+  .hb-stale-prone { max-block-size: none; overflow: visible; }
+}

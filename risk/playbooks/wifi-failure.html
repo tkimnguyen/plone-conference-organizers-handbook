@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="First-hour actions when the conference network fails or saturates, with the roles that own the response." lang="en" name="description" xml:lang="en" />
+<meta content="Plone, Plone Conference, Wi-Fi, network failure, incident playbook" name="keywords" />
+<meta property="og:title" content="Playbook: Wi-Fi failure" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="risk/playbooks/wifi-failure.html" />
+<meta property="og:site_name" content="Plone Conference Organizers Handbook" />
+<meta property="og:description" content="Open this playbook when attendees cannot get online at the venue. It covers the first hour; the network plan itself is in av-recording-internet. Triggers: Attendees in several rooms report no conne..." />
+<meta property="og:locale" content="en_US" />
+
+    <title>Playbook: Wi-Fi failure &#8212; Plone Conference Organizers Handbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=0fc419ee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/plone-sphinx-theme.css?v=03afa5dd" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=6a604523" />
+    <link rel="stylesheet" type="text/css" href="../../_static/hb.css?v=932d0239" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+
+    <script src="../../_static/documentation_options.js?v=b9472d72"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/plone-sphinx-theme.js?v=ce3a8c55"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../../_static/design-tabs.js?v=fcb327ea"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'risk/playbooks/wifi-failure';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="The annual ritual" href="../../running/annual-ritual.html" />
+    <link rel="prev" title="Playbook: venue loss" href="venue-loss.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search"
+         aria-label="Search"
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Plone Conference Organizers Handbook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../start/about.html">About and purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/choose-your-path.html">Choose your path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/context-dimensions.html">Context dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/honesty-statement.html">Honesty statement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/how-to-read-lessons.html">How to read lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/license-and-contribute.html">License and contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/problem-history.html">The problem history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/tailor.html">Tailor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/use.html">Use: your first 90 days</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">The organizer's job</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../job/bid-and-selection.html">Bid and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/community-and-speaker-expectations.html">Community and speaker expectations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/defining-success.html">Defining success</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/handover-contract.html">Handover contract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/legal-entity-and-financial-agent.html">Legal entity and financial agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/master-timeline.html">Master timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/stakeholder-map.html">Stakeholder map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../job/team-and-governance.html">Team and governance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Workstreams</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/index.html">Workstreams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/formats-and-values/hybrid-online.html">Hybrid and online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/formats-and-values/sustainability.html">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/marketing/marketing-and-outreach.html">Marketing and outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/marketing/web-comms-brand.html">Web, comms and brand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/contracts-legal-insurance.html">Contracts, legal and insurance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/finance.html">Finance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/privacy-gdpr.html">Privacy and GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/sponsors.html">Sponsors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/money-and-law/ticketing-and-registration.html">Ticketing and registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/on-site-production/av-recording-internet.html">AV, recording and internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/on-site-production/print-and-merch.html">Print and merch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/on-site-production/signage-and-showtime.html">Signage and showtime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/accessibility-and-inclusion.html">Accessibility and inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/code-of-conduct-operations.html">Code of Conduct operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/health-safety-emergencies.html">Health, safety and emergencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/visas-and-travel.html">Visas and travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/people/volunteers-and-roles.html">Volunteers and roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/business-and-side-tracks.html">Business and side tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/cfp-and-selection.html">CFP and selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/keynotes-and-invited-talks.html">Keynotes and invited talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/programme-portfolio.html">Programme portfolio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/speakers-and-speaker-care.html">Speakers and speaker care</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/sprints.html">Sprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/programme/trainings.html">Trainings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/social/social-events-and-party.html">Social events and party</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/catering.html">Catering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/city-selection.html">City selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/hotels-and-local-logistics.html">Hotels and local logistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workstreams/venue-and-logistics/venue.html">Venue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Risk and incidents</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../risk-method.html">The risk register method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cross-cutting-risks.html">Cross-cutting risks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-flow-crunch.html">Playbook: cash-flow crunch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coc-incident.html">Playbook: Code of Conduct incident</a></li>
+<li class="toctree-l1"><a class="reference internal" href="force-majeure.html">Playbook: force majeure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="key-person-loss.html">Playbook: key-person loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="low-ticket-sales.html">Playbook: low ticket sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speaker-dropout.html">Playbook: speaker dropout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="venue-loss.html">Playbook: venue loss</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Playbook: Wi-Fi failure</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Running the handbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../running/annual-ritual.html">The annual ritual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/extend.html">Extend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/governance.html">Governance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/lesson-authoring-rules.html">Lesson authoring rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/thin-registry-about.html">About the thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../running/update.html">Update</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Evidence and archive</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../evidence/conference-index.html">Conference index</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/source-bibliography.html">Source bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../evidence/lessons-ledger.html">Lessons ledger</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/conference-data-table.html">Conference data table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/cost-benchmarks.html">Dated cost benchmarks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/lessons-ledger.html">Lessons ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/requirements-register.html">Foundation requirements register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../evidence/source-bibliography.html">Source bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Annexes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/br.html">Annex: Brazil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/de.html">Annex: Germany</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/nl.html">Annex: Netherlands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/jurisdictions/us.html">Annex: United States</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../annexes/variants/small-budget.html">Annex: small-budget variant</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/survey-template.html">Template: attendee survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/post-mortem-template.html">Template: post-mortem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/cfp-template.html">Template: call for proposals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/sponsor-prospectus-template.html">Template: sponsor prospectus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/budget-sheet-template.html">Template: budget sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/role-descriptions-template.html">Template: role descriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/tailoring-record-template.html">Template: Tailoring Record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/hledger-accounting-setup.html">Template: hledger accounting setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/ticket-purchase-prediction-model.html">Ticket-purchase prediction model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/global-south-grant-argumentation.html">Global south grant argumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/t-minus-checklist.html">T-minus checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/seattle-2006-digest.html">Annotated Seattle 2006 digest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary.html">Glossary</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Conference records</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../conferences/2026-maastricht/conference-2026-maastricht.html">Plone Conference 2026, Maastricht: case file</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Generated registers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../generated/lesson-index.html">Lesson index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/risk-register.html">Risk register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/thin-registry.html">Thin registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/decision-register.html">Decision register</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/coverage-map.html">Coverage map</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/syslabcom/plone-conference-organizers-handbook/issues/new?title=Issue%20on%20page%20%2Frisk/playbooks/wifi-failure.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/risk/playbooks/wifi-failure.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Playbook: Wi-Fi failure</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#triggers">Triggers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-hour-actions">First-hour actions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#owner-roles">Owner roles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#related-chapters">Related chapters</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-history-says">What history says</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="playbook-wi-fi-failure">
+<h1>Playbook: Wi-Fi failure<a class="headerlink" href="#playbook-wi-fi-failure" title="Link to this heading">#</a></h1>
+<p>Open this playbook when attendees cannot get online at the venue.
+It covers the first hour; the network plan itself is in <code class="docutils literal notranslate"><span class="pre">av-recording-internet</span></code>.</p>
+<section id="triggers">
+<h2>Triggers<a class="headerlink" href="#triggers" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Attendees in several rooms report no connection at the same moment, most often on the opening morning, when every device connects at once (L-4097).</p></li>
+<li><p>Devices join the network but get no address, which points to an exhausted address pool.</p></li>
+<li><p>The network is not live when doors open, because the provider is still installing.</p></li>
+<li><p>Pages load but specific tools fail, which points to ports blocked upstream.</p></li>
+<li><p>The live stream or the live coverage stops because the uplink is down.</p></li>
+<li><p>The person who runs the network cannot be reached; open <a class="reference internal" href="key-person-loss.html"><span class="std std-doc">Playbook: key-person loss</span></a> as well.</p></li>
+</ul>
+</section>
+<section id="first-hour-actions">
+<h2>First-hour actions<a class="headerlink" href="#first-hour-actions" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Establish the scope within five minutes: test with two devices in two rooms and write down which rooms, which symptom and the time.</p></li>
+<li><p>Call the upstream network administrators on the direct number agreed before the event, not the venue's general desk (L-1122).
+Done looks like a named contact at the provider who has acknowledged the fault.</p></li>
+<li><p>Ask the network owner to classify the fault as one of: no uplink, no addresses, saturation, blocked ports, or local hardware.
+Each class has a different fix and a different time to repair.</p></li>
+<li><p>Protect the stage: presenters switch to local copies of their slides, and the recording team keeps recording to local disk.</p></li>
+<li><p>Move the registration desk and the stream to the wired or mobile backup, if one exists.
+Registration works from an offline attendee list until the network returns.</p></li>
+<li><p>Tell the room hosts and the information desk one sentence: what is down, what still works, and when the next update comes.
+Announce the same sentence at the next session change, because a chat message cannot reach people without a network.</p></li>
+<li><p>If no fix is in sight after 30 minutes, ask attendees to connect one device each and to pause large downloads and video calls.</p></li>
+<li><p>Keep a timestamped log of the fault, the calls and the fixes for the post-mortem.</p></li>
+</ol>
+</section>
+<section id="owner-roles">
+<h2>Owner roles<a class="headerlink" href="#owner-roles" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>Responsibility</p></th>
+<th class="head"><p>Full advice in</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Network owner</p></td>
+<td><p>Diagnoses the fault, works with the provider, and decides on the backup.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">av-recording-internet</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Venue liaison</p></td>
+<td><p>Reaches the venue's technical staff and the provider when the direct line fails.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">venue</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Recording lead</p></td>
+<td><p>Keeps recording to local disk and decides whether the stream pauses.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">av-recording-internet</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Registration lead</p></td>
+<td><p>Runs check-in from the offline attendee list.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ticketing-and-registration</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>On-site lead</p></td>
+<td><p>Briefs the room hosts and the information desk, and sets the update rhythm.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">signage-and-showtime</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Communications lead</p></td>
+<td><p>Publishes the status on the website and social channels once a channel works.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">web-comms-brand</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="related-chapters">
+<h2>Related chapters<a class="headerlink" href="#related-chapters" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../risk-method.html"><span class="std std-doc">The risk register method</span></a> explains how this playbook relates to the chapter risks.</p></li>
+<li><p><a class="reference internal" href="key-person-loss.html"><span class="std std-doc">Playbook: key-person loss</span></a> covers the case where the network owner drops out.</p></li>
+<li><p><a class="reference internal" href="../../generated/risk-register.html"><span class="std std-doc">Risk register</span></a> lists the network risks of every chapter.</p></li>
+<li><p>The full advice is in <code class="docutils literal notranslate"><span class="pre">av-recording-internet</span></code>, with venue selection in <code class="docutils literal notranslate"><span class="pre">venue</span></code>.</p></li>
+</ul>
+<section id="what-history-says">
+<h3>What history says<a class="headerlink" href="#what-history-says" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In 2006 the provider read the installation time as the time to start work, so the network was down until after lunch on the first training day, and the address pool ran out on the first conference day (L-1114, L-1115 in <code class="docutils literal notranslate"><span class="pre">av-recording-internet#case-notes</span></code>).</p></li>
+<li><p>The same organizers concluded that every attendee will connect at once, that providers will not believe it, and that a provider accountable to the organizers should run the network (L-1116, L-1118 in <code class="docutils literal notranslate"><span class="pre">av-recording-internet#principles-and-general-lessons</span></code>).
+One attendee argued the opposite, for a dedicated line and the organizers' own routers (L-1117, hearsay).</p></li>
+<li><p>Internet access was the lowest-rated logistics item of that year (L-1123).</p></li>
+<li><p>In 2008 the opening-morning load took the venue network down for most of the day, and live coverage of the keynote waited for the fix (L-4097, L-4098).</p></li>
+<li><p>In 2010 the returning Wi-Fi specialist's equipment was stolen before the event, and a last-minute order of access points from a local stockist saved the setup (L-2036).</p></li>
+<li><p>In 2011 the person responsible for the Wi-Fi was hospitalized two weeks before the conference, with no backup plan (L-3075).</p></li>
+<li><p>In 2012 the venue sat on a government network that blocked non-work use, so the organizers paid for a dedicated fiber line that was ready a month before the event (L-2076).</p></li>
+<li><p>The requirements register records a venue standard of reliable wireless access for all attendees at once, unverifiable as a binding rule as of 2026-11-02 (R-022 in <code class="docutils literal notranslate"><span class="pre">requirements-register</span></code>).</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="venue-loss.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Playbook: venue loss</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../running/annual-ritual.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The annual ritual</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#triggers">Triggers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#first-hour-actions">First-hour actions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#owner-roles">Owner roles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#related-chapters">Related chapters</a><ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-history-says">What history says</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Plone community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright Plone community, CC BY 4.0.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>The text and illustrations in this handbook are licensed under a Creative Commons Attribution 4.0 International license. Plone and the Plone® logo are registered trademarks of the Plone Foundation. For guidelines on the permitted uses of the Plone trademarks, see <a href="https://plone.org/foundation/logo">https://plone.org/foundation/logo</a>.</p>
+</div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
